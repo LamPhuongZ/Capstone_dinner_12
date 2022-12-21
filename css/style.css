@@ -1,0 +1,11 @@
+.light * {
+    color: black;
+}
+
+.dark * {
+    color: red;
+}
+
+.light header {}
+
+.dark header {}

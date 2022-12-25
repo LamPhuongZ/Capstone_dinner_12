@@ -93,3 +93,14 @@ h6 {
     line-height: 48px;
   }
 }
+.light * {
+    color: black;
+}
+
+.dark * {
+    color: red;
+}
+
+.light header {}
+
+.dark header {}

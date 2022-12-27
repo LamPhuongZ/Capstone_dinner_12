@@ -1,6 +1,7 @@
+/* GLOBAL */
 * {
   box-sizing: border-box;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
 }
 
@@ -109,17 +110,106 @@ h6 {
   }
 }
 
-.light * {
+/* .light * {
   color: black;
 }
 
 .dark * {
   color: red;
+} */
+
+/* .light header {}
+
+.dark header {} */
+
+
+
+/* HEADER CSS */
+.light header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
-.light header {}
+/* END HEADER CSS */
 
-.dark header {}
+
+/* CAROUSEL CSS */
+.carousel {
+  background-image: linear-gradient(to right,
+      #ff6600,
+      hsl(30deg 100% 1% / 20%)), url(../img/banner1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+
+  /* background-attachment: dùng để kiểm soát hình nền liên quan đến khung hình
+  - Fixed: hình nền được cố định vào khung nhìn và không di chuyển, ngay cả người dùng di chuyển dọc theo khung.
+  - Local: cố định hình theo vị trí của nó trong phần tử. Nếu phần tử có một cơ chế di chuyển và hình nền được đặt lên hàng đầu, khi người dùng cuộn xuống phần tử, hình nền sẽ di chuyển ra khỏi tầm nhìn.
+  - Scroll: có nghĩa là các hình nền cố định và sẽ không di chuyển ngay cả với các nội dung của các phần tử của nó. */
+  background-attachment: fixed;
+  min-height: 700px;
+  overflow: hidden;
+}
+
+.carousel .carousel__title {
+  max-width: 600px;
+  text-align: left;
+  margin-top: 100px;
+}
+
+.carousel .carousel__title h3 {
+  font-size: 54px;
+  line-height: 64px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: white;
+}   
+
+.carousel .carousel__content {
+  max-width: 600px;
+  text-align: left;
+}
+
+.carousel .carousel__content p {
+  font-size: 16px;
+  line-height: 18px;
+  color: white;
+}
+
+.btn__white {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+
+  padding: 12px 45px;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 700;
+  transition: all 0.3s;
+  border-radius: 6px;
+}
+
+.btn__white:hover {
+  background: white;
+  border: 2px solid white;
+  color: #ff6600;
+}
+
+@media (min-width: 992px) {
+  .pr-lg-5 {
+    padding-right: 3rem !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .mt-md-4 {
+    margin-top: 1.5rem !important;
+  }
+}
+
+/* END CAROUSEL CSS */
 
 /* CATEGORIES */
 .categories {

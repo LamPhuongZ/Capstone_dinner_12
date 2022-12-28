@@ -7,7 +7,7 @@
 
 body {
   font-family: "Quicksand", sans-serif;
-  color: #161c2db3;
+  color: #232121;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -68,7 +68,7 @@ h6 {
 
 .before__title {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 30px;
   letter-spacing: 1px;
   color: #ff6600 !important;
@@ -86,7 +86,7 @@ h6 {
 .title {
   font-size: 26px;
   line-height: 36px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 @media (min-width: 480px) {
@@ -324,4 +324,53 @@ h6 {
 .posts__readMore span {
   color: #232121;
   opacity: 0.9;
+}
+
+/* TESTIMONIALS */
+.tes__infor {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.tes__comment img {
+  width: 85px;
+  height: 85px;
+  overflow: hidden;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.tes__comment q::before {
+  font-size: 50px;
+  display: block;
+  font-family: initial;
+  color: #ff6600;
+}
+.tes__comment blockquote {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+.tes__comment p {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 28px;
+  color: #161c2db3;
+  font-family: "Quicksand", sans-serif;
+}
+.tes__name h3 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 20px;
+}
+.tes__name p {
+  font-size: 18px;
+  font-style: normal;
+  margin-bottom: 0;
+  opacity: 0.8;
+  margin-top: 4px;
 }

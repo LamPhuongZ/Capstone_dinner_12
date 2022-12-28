@@ -13,15 +13,20 @@
   <!-- GOOGLE FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Quicksand Font -->
   <link
     href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Oswald:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
 
+  <!-- Pacifico Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
   <!-- FONT AWESOME -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+  <!-- SLICK JS -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
   <!-- MY CSS -->
   <link rel="stylesheet" href="./css/style.css">
 
@@ -29,7 +34,7 @@
 
 <body class="light">
   <!-- HEADER -->
-  <header>    
+  <header>
     <!-- <button id="changeTheme">Change theme</button> -->
   </header>
   <!-- END HEADER -->
@@ -40,11 +45,12 @@
       <div class="carousel__title">
         <h3 class="mb-4">The only thing we love more than food is you!</h3>
       </div>
-      
-      <div class="carousel__content">
-        <p class="pr-lg-5 mt-md-4 mt-3">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.Ea ipsum sed consequuntur illum facere. </p>
 
-        <a class="btn btn__white mt-sm-5 mt-4 mr-2" href="#"> Read More 
+      <div class="carousel__content">
+        <p class="pr-lg-5 mt-md-4 mt-3">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.Ea
+          ipsum sed consequuntur illum facere. </p>
+
+        <a class="btn btn__white mt-sm-5 mt-4 mr-2" href="#"> Read More
           <span class="fa fa-chevron-right ml-2" aria-hidden="true"></span>
         </a>
       </div>
@@ -195,7 +201,7 @@
               <div class="posts__name m-0">
                 <img src="./img/p3.jpg" alt="">
                 <span>Rashed Kabir</span>
-              </div>  
+              </div>
               <div class="posts__readMore m-0">
                 <span>Read More</span>
                 <i class="fa-sharp fa-solid fa-angle-right"></i>
@@ -210,7 +216,7 @@
               <button>Soup</button>
               <div class="posts__finish">
                 <i class="far fa-clock "></i>
-                 <span>10 Min Cook</span>
+                <span>10 Min Cook</span>
               </div>
             </div>
           </div>
@@ -225,7 +231,7 @@
               <div class="posts__name m-0">
                 <img src="./img/p4.jpg" alt="">
                 <span>Jannatul Ferdous</span>
-              </div>  
+              </div>
               <div class="posts__readMore m-0">
                 <span>Read More</span>
                 <i class="fa-sharp fa-solid fa-angle-right"></i>
@@ -240,7 +246,7 @@
               <button>Drinks</button>
               <div class="posts__finish">
                 <i class="far fa-clock "></i>
-                 <span>10 Min Cook</span>
+                <span>10 Min Cook</span>
               </div>
             </div>
           </div>
@@ -255,7 +261,7 @@
               <div class="posts__name m-0">
                 <img src="./img/p5.jpg" alt="">
                 <span>Rashed Kabir</span>
-              </div>  
+              </div>
               <div class="posts__readMore m-0">
                 <span>Read More</span>
                 <i class="fa-sharp fa-solid fa-angle-right"></i>
@@ -263,8 +269,8 @@
             </div>
           </div>
         </div>
-        </div>
-        </div>
+      </div>
+    </div>
     </div>
 
 
@@ -272,7 +278,84 @@
   <!-- END POST -->
 
   <!-- TESTIMONIALS -->
-  <section class="testimonials"></section>
+  <section class="testimonials py-5">
+    <div class="container text__center py-md-5 py-lg-3">
+      <div class="tes__title">
+        <h6 class="before__title">Testimonials</h6>
+        <h3 class="title mb-5">What People Say</h3>
+      </div>
+      <div class="tes__infor">
+        <div class="tes__item">
+          <div class="tes__comment">
+            <img src="./img/p3.jpg" alt="">
+            <blockquote>
+              <q>OMG! I cannot believe. It's Awesome</q>
+            </blockquote>
+            <p>
+              My new site is so much faster and easier to work with than my old site. They are here to
+              help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
+              Pellen tesque libero ut justo, ultrices in ligula.
+            </p>
+          </div>
+          <div class="tes__name mt-4">
+            <h3>Johnson William</h3>
+            <p>Customer</p>
+          </div>
+        </div>
+        <div class="tes__item">
+          <div class="tes__comment">
+            <img src="./img/p4.jpg" alt="">
+            <blockquote>
+              <q>Simply the best. Better than all the rest.</q>
+            </blockquote>
+            <p>
+              My new site is so much faster and easier to work with than my old site. They are here to
+              help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
+              Pellen tesque libero ut justo, ultrices in ligula.
+            </p>
+          </div>
+          <div class="tes__name mt-4">
+            <h3>Alexander Sakura</h3>
+            <p>Customer</p>
+          </div>
+        </div>
+        <div class="tes__item">
+          <div class="tes__comment">
+            <img src="./img/p5.jpg" alt="">
+            <blockquote>
+              <q>OMG! I cannot believe. It's Awesome</q>
+            </blockquote>
+            <p>
+              My new site is so much faster and easier to work with than my old site. They are here to
+              help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
+              Pellen tesque libero ut justo, ultrices in ligula.
+            </p>
+          </div>
+          <div class="tes__name mt-4">
+            <h3>John Wilson</h3>
+            <p>Customer</p>
+          </div>
+        </div>
+        <div class="tes__item">
+          <div class="tes__comment">
+            <img src="./img/p4.jpg" alt="">
+            <blockquote>
+              <q>OMG! I cannot believe. It's Awesome</q>
+            </blockquote>
+            <p>
+              My new site is so much faster and easier to work with than my old site. They are here to
+              help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
+              Pellen tesque libero ut justo, ultrices in ligula.
+            </p>
+          </div>
+          <div class="tes__name mt-4">
+            <h3>Julia Sakura</h3>
+            <p>Customer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- END TESTIMONIALS -->
 
   <!-- FOOTER -->
@@ -290,7 +373,13 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-
+  <!-- SLICK JS -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+    $('.tes__infor').slick({
+      dots: true
+    });
+  </script>
   <script src="./js/index.js"></script>
 </body>
 

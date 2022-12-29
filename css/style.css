@@ -220,7 +220,6 @@ h6 {
 
   position: relative;
   min-height: 600px;
-  z-index: 1;
 }
 
 .restaurants .restaurants__image::before {
@@ -232,8 +231,6 @@ h6 {
   left: 0;
   right: 0;
   min-height: 100%;
-  z-index: -1;
-
 }
 
 .restaurants__than {

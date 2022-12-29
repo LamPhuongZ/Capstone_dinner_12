@@ -206,6 +206,107 @@ h6 {
 
 /* END CAROUSEL CSS */
 
+
+/* RESTAURANTS CSS */
+.restaurants {
+  background-color: #ff6600;
+}
+
+.restaurants__image {
+  background-image: url(../img/banner3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  position: relative;
+  min-height: 600px;
+}
+
+.restaurants .restaurants__image::before {
+  content: "";
+  background: rgb(16 15 19 / 0.46);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 100%;
+}
+
+.restaurants__than {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  display: block;
+  font-family: 'Pacifico', cursive;
+  color: white;
+}
+
+.restaurants__book {
+  font-size: 38px;
+  line-height: 48px;
+  font-weight: 600;
+}
+
+.restaurants__title p {
+  color: #ffdfc9;
+  font-size: 18px;
+  line-height: 28px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.restaurants__subsribe {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+}
+
+.restaurants__subsribe__item .icon {
+  background: white;
+}
+
+.icon {
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  background: rgba(130, 115, 252, .05);
+  line-height: 70px;
+  border-radius: 6px;
+  transition: all 0.3s;
+}
+
+/* Trước hover */
+.icon span {
+  color: #ff6600;
+  font-size: 25px;
+  line-height: 70px;
+}
+
+/* Sau hover */
+.restaurants__subsribe__item:hover .icon span {
+  color: #ffc600;
+  transition: all 0.3s;
+}
+
+.restaurants__subsribe__item .restaurants__subsribe__link {
+  display: block;
+  color: #232121;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+@media (max-width: 992px) {
+  .restaurants__image {
+    min-height: 200px;
+  }
+}
+
+/* END RESTAURANTS CSS */
+
 /* CATEGORIES */
 .categories {
   padding-bottom: 90px;
@@ -249,13 +350,16 @@ h6 {
   color: #ffc600;
 }
 /* POST */
-.row {
+
+/* Phần row ở post này đóng lại vì ảnh hưởng class row hiện có của bootrap và ảnh hưởng hình ảnh khi thiết lập thu nhỏ phần Restaurants */
+/* .row {
   display: flex;
   justify-content: start;
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
-}
+} */
+
 .posts__card {
   position: relative;
 }

@@ -13,14 +13,23 @@
   <!-- GOOGLE FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Quicksand Font -->
   <link
     href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Oswald:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
+
+  <!-- Pacifico Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
   <!-- FONT AWESOME -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- SLICK JS -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
   <!-- MY CSS -->
   <link rel="stylesheet" href="./css/style.css">
@@ -29,7 +38,7 @@
 
 <body class="light">
   <!-- HEADER -->
-  <header>    
+  <header>
     <!-- <button id="changeTheme">Change theme</button> -->
   </header>
   <!-- END HEADER -->
@@ -40,11 +49,12 @@
       <div class="carousel__title">
         <h3 class="mb-4">The only thing we love more than food is you!</h3>
       </div>
-      
-      <div class="carousel__content">
-        <p class="pr-lg-5 mt-md-4 mt-3">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.Ea ipsum sed consequuntur illum facere. </p>
 
-        <a class="btn btn__white mt-sm-5 mt-4 mr-2" href="#"> Read More 
+      <div class="carousel__content">
+        <p class="pr-lg-5 mt-md-4 mt-3">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.Ea
+          ipsum sed consequuntur illum facere. </p>
+
+        <a class="btn btn__white mt-sm-5 mt-4 mr-2" href="#"> Read More
           <span class="fa fa-chevron-right ml-2" aria-hidden="true"></span>
         </a>
       </div>
@@ -57,7 +67,48 @@
   <!-- END ABOUT -->
 
   <!-- RESTAURANT -->
-  <section class="restaurants"></section>
+  <section class="restaurants">
+    <div class="container-fluid px-lg-0">
+      <div class="row align-items-center no-gutters">
+        <div class="col-lg-6 px-lg-0 pt-lg-0 pt-5">
+          <div class="restaurants__image">
+            <!-- hình ảnh được thiết kế bên css -->
+          </div>
+        </div>
+
+        <div class="col-lg-6 px-lg-4 py-lg-3 py-4">
+          <div class="restaurants__content p-md-5 p-3">
+            <div class="restaurants__title">
+              <h6 class="restaurants__than">More than 3000 restaurants</h6>
+              <h3 class="restaurants__book">Book a table easly at the best price</h3>
+              <p class="my-3"> Vestibulum ante ipsum primis in faucibus orci luctus
+                turpis sodales quis. Integer sit amet mattis quam.Vivamus a ligula quam tesque et libero ut justo
+                ultrices in.</p>
+
+              <div class="restaurants__subsribe mt-5">
+                <div class="restaurants__subsribe__item">
+                  <div class="icon mb-4">
+                    <span class="fa fa-thumbs-up"></span>
+                  </div>
+                  <a href="#" class="restaurants__subsribe__link">Best Deals</a>
+                  <p class="mt-2">Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
+                </div>
+
+                <div class="restaurants__subsribe__item">
+                  <div class="icon mb-4">
+                    <span class="fa fa-cutlery"></span>
+                  </div>
+                  <a href="#" class="restaurants__subsribe__link">Best Food</a>
+                  <p class="mt-2">Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- END RESTAURANT -->
 
   <!-- CATEGORIES -->
@@ -166,11 +217,190 @@
   <!-- END DELICIOUSNESS -->
 
   <!-- POST -->
-  <section class="posts"></section>
+  <section class="posts bg-light ">
+    <div class="container py-2 py-md-5">
+      <div class="posts__title text__center">
+        <h4 class="before__title pt-5">Latest Post</h4>
+        <p class="title pb-4">Blog Posts</p>
+      </div>
+      <div class="row posts__content">
+        <div class="col-lg-4 col-md-6 mt-5 posts__item">
+          <div class="posts__card">
+            <img class="rounded-lg" src="./img/p1.jpg" alt="">
+            <div class="posts__time">
+              <button>Reciepe</button>
+              <div class="posts__finish">
+                <i class="far fa-clock "></i>
+                <span>10 Min Cook</span>
+              </div>
+            </div>
+          </div>
+          <div class="posts__detals">
+            <p class="posts__dis">
+              The Best Cookie Recipes To Bake This Weekend
+            </p>
+            <p class="post__infor">
+              Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi vitae sit.
+            </p>
+            <div class="posts__footer mt-3 d-flex justify-content-between align-items-center">
+              <div class="posts__name m-0">
+                <img src="./img/p3.jpg" alt="">
+                <span>Rashed Kabir</span>
+              </div>
+              <div class="posts__readMore m-0">
+                <span>Read More</span>
+                <i class="fa-sharp fa-solid fa-angle-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mt-5 posts__item">
+          <div class="posts__card">
+            <img class="rounded-lg" src="./img/p2.jpg" alt="">
+            <div class="posts__time">
+              <button>Soup</button>
+              <div class="posts__finish">
+                <i class="far fa-clock "></i>
+                <span>10 Min Cook</span>
+              </div>
+            </div>
+          </div>
+          <div class="posts__detals">
+            <p class="posts__dis">
+              The Best Cookie Recipes To Bake This Weekend
+            </p>
+            <p class="post__infor">
+              Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi vitae sit.
+            </p>
+            <div class="posts__footer mt-3 d-flex justify-content-between align-items-center">
+              <div class="posts__name m-0">
+                <img src="./img/p4.jpg" alt="">
+                <span>Jannatul Ferdous</span>
+              </div>
+              <div class="posts__readMore m-0">
+                <span>Read More</span>
+                <i class="fa-sharp fa-solid fa-angle-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mt-5 posts__item">
+          <div class="posts__card">
+            <img class="rounded-lg" src="./img/p1.jpg" alt="">
+            <div class="posts__time">
+              <button>Drinks</button>
+              <div class="posts__finish">
+                <i class="far fa-clock "></i>
+                <span>10 Min Cook</span>
+              </div>
+            </div>
+          </div>
+          <div class="posts__detals">
+            <p class="posts__dis">
+              The Best Cookie Recipes To Bake This Weekend
+            </p>
+            <p class="post__infor">
+              Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi vitae sit.
+            </p>
+            <div class="posts__footer mt-3 d-flex justify-content-between align-items-center">
+              <div class="posts__name m-0">
+                <img src="./img/p5.jpg" alt="">
+                <span>Rashed Kabir</span>
+              </div>
+              <div class="posts__readMore m-0">
+                <span>Read More</span>
+                <i class="fa-sharp fa-solid fa-angle-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+  </section>
   <!-- END POST -->
 
   <!-- TESTIMONIALS -->
-  <section class="testimonials"></section>
+  <section class="testimonials py-5">
+    <div class="container text__center py-md-5 py-lg-3">
+      <div class="tes__title">
+        <h6 class="before__title">Testimonials</h6>
+        <h3 class="title mb-5">What People Say</h3>
+      </div>
+      <div class="tes__infor">
+        <div class="tes__item">
+          <div class="tes__comment">
+            <img src="./img/p3.jpg" alt="">
+            <blockquote>
+              <q>OMG! I cannot believe. It's Awesome</q>
+            </blockquote>
+            <p>
+              My new site is so much faster and easier to work with than my old site. They are here to
+              help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
+              Pellen tesque libero ut justo, ultrices in ligula.
+            </p>
+          </div>
+          <div class="tes__name mt-4">
+            <h3>Johnson William</h3>
+            <p>Customer</p>
+          </div>
+        </div>
+        <div class="tes__item">
+          <div class="tes__comment">
+            <img src="./img/p4.jpg" alt="">
+            <blockquote>
+              <q>Simply the best. Better than all the rest.</q>
+            </blockquote>
+            <p>
+              My new site is so much faster and easier to work with than my old site. They are here to
+              help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
+              Pellen tesque libero ut justo, ultrices in ligula.
+            </p>
+          </div>
+          <div class="tes__name mt-4">
+            <h3>Alexander Sakura</h3>
+            <p>Customer</p>
+          </div>
+        </div>
+        <div class="tes__item">
+          <div class="tes__comment">
+            <img src="./img/p5.jpg" alt="">
+            <blockquote>
+              <q>OMG! I cannot believe. It's Awesome</q>
+            </blockquote>
+            <p>
+              My new site is so much faster and easier to work with than my old site. They are here to
+              help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
+              Pellen tesque libero ut justo, ultrices in ligula.
+            </p>
+          </div>
+          <div class="tes__name mt-4">
+            <h3>John Wilson</h3>
+            <p>Customer</p>
+          </div>
+        </div>
+        <div class="tes__item">
+          <div class="tes__comment">
+            <img src="./img/p4.jpg" alt="">
+            <blockquote>
+              <q>OMG! I cannot believe. It's Awesome</q>
+            </blockquote>
+            <p>
+              My new site is so much faster and easier to work with than my old site. They are here to
+              help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
+              Pellen tesque libero ut justo, ultrices in ligula.
+            </p>
+          </div>
+          <div class="tes__name mt-4">
+            <h3>Julia Sakura</h3>
+            <p>Customer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- END TESTIMONIALS -->
 
   <!-- FOOTER -->
@@ -188,7 +418,13 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-
+  <!-- SLICK JS -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+    $('.tes__infor').slick({
+      dots: true
+    });
+  </script>
   <script src="./js/index.js"></script>
 </body>
 

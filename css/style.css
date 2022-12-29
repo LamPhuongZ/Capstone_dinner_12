@@ -7,7 +7,7 @@
 
 body {
   font-family: "Quicksand", sans-serif;
-  color: #161c2db3;
+  color: #232121;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -68,7 +68,7 @@ h6 {
 
 .before__title {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 30px;
   letter-spacing: 1px;
   color: #ff6600 !important;
@@ -86,7 +86,7 @@ h6 {
 .title {
   font-size: 26px;
   line-height: 36px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 @media (min-width: 480px) {
@@ -119,10 +119,7 @@ h6 {
 } */
 
 /* .light header {}
-
 .dark header {} */
-
-
 
 /* HEADER CSS */
 .light header {
@@ -134,12 +131,10 @@ h6 {
 
 /* END HEADER CSS */
 
-
 /* CAROUSEL CSS */
 .carousel {
-  background-image: linear-gradient(to right,
-      #ff6600,
-      hsl(30deg 100% 1% / 20%)), url(../img/banner1.jpg);
+  background-image: linear-gradient(to right, #ff6600, hsl(30deg 100% 1% / 20%)),
+    url(../img/banner1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -165,7 +160,7 @@ h6 {
   font-weight: 600;
   text-transform: capitalize;
   color: white;
-}   
+}
 
 .carousel .carousel__content {
   max-width: 600px;
@@ -197,19 +192,111 @@ h6 {
   color: #ff6600;
 }
 
-@media (min-width: 992px) {
-  .pr-lg-5 {
-    padding-right: 3rem !important;
-  }
-}
-
-@media (min-width: 768px) {
-  .mt-md-4 {
-    margin-top: 1.5rem !important;
-  }
-}
-
 /* END CAROUSEL CSS */
+
+
+/* RESTAURANTS CSS */
+.restaurants {
+  background-color: #ff6600;
+}
+
+.restaurants__image {
+  background-image: url(../img/banner3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  position: relative;
+  min-height: 600px;
+  z-index: 1;
+}
+
+.restaurants .restaurants__image::before {
+  content: "";
+  background: rgb(16 15 19 / 0.46);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 100%;
+  z-index: -1;
+
+}
+
+.restaurants__than {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  display: block;
+  font-family: 'Pacifico', cursive;
+  color: white;
+}
+
+.restaurants__book {
+  font-size: 38px;
+  line-height: 48px;
+  font-weight: 600;
+}
+
+.restaurants__title p {
+  color: #ffdfc9;
+  font-size: 18px;
+  line-height: 28px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.restaurants__subsribe {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+}
+
+.restaurants__subsribe__item .icon {
+  background: white;
+}
+
+.icon {
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  background: rgba(130, 115, 252, .05);
+  line-height: 70px;
+  border-radius: 6px;
+  transition: all 0.3s;
+}
+
+/* Trước hover */
+.icon span {
+  color: #ff6600;
+  font-size: 25px;
+  line-height: 70px;
+}
+
+/* Sau hover */
+.restaurants__subsribe__item:hover .icon span {
+  color: #ffc600;
+  transition: all 0.3s;
+}
+
+.restaurants__subsribe__item .restaurants__subsribe__link {
+  display: block;
+  color: #232121;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+@media (max-width: 992px) {
+  .restaurants__image {
+    min-height: 200px;
+  }
+}
+
+/* END RESTAURANTS CSS */
 
 /* CATEGORIES */
 .categories {
@@ -252,4 +339,148 @@ h6 {
 
 .col__nameFood span {
   color: #ffc600;
+}
+
+/* POST */
+/* .row {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+} */
+
+.posts__card {
+  position: relative;
+}
+
+.posts__card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.posts__time {
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.posts__time button {
+  background: #ff6600;
+  border: none;
+  color: #fff;
+  padding: 3px 20px;
+  border-radius: 35px;
+  font-weight: 700;
+  font-size: 12px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.posts__finish {
+  margin-left: 10px;
+  letter-spacing: 1.5px;
+}
+
+.posts__finish span {
+  color: white;
+  font-size: 15px;
+}
+
+.posts__finish .fa-clock {
+  color: white;
+  font-size: 14px;
+}
+
+.posts__dis {
+  display: block;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 600;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.posts__infor {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 28px;
+  color: #161c2db3;
+  font-family: "Quicksand", sans-serif;
+}
+
+.posts__footer {
+  font-weight: 700;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.posts__name img {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.posts__readMore span {
+  color: #232121;
+  opacity: 0.9;
+}
+
+/* TESTIMONIALS */
+.tes__infor {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.tes__comment img {
+  width: 85px;
+  height: 85px;
+  overflow: hidden;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.tes__comment q::before {
+  font-size: 50px;
+  display: block;
+  font-family: initial;
+  color: #ff6600;
+}
+
+.tes__comment blockquote {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.tes__comment p {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 28px;
+  color: #161c2db3;
+  font-family: "Quicksand", sans-serif;
+}
+
+.tes__name h3 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.tes__name p {
+  font-size: 18px;
+  font-style: normal;
+  margin-bottom: 0;
+  opacity: 0.8;
+  margin-top: 4px;
 }

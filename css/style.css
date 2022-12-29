@@ -163,3 +163,78 @@ h6 {
 .col__nameFood span {
   color: #ffc600;
 }
+
+/* FEATURES */
+.feature__content {
+  padding: 50px 0;
+}
+
+.feature__content .row {
+  padding: 50px 0;
+  row-gap: 30px;
+}
+
+.features__wrapper {
+  padding: 0;
+}
+
+.col__details {
+  padding: 30px;
+  width: 90%;
+  border-radius: 5px;
+  border: 1px solid rgb(219, 213, 213, 0.4);
+  box-shadow: 0 0 60px 0 rgb(0 0 0 / 3%);
+  transition: all 0.5s;
+}
+
+.col__details:hover {
+  box-shadow: 0 0 60px 0 rgb(0 0 0 / 15%);
+}
+
+.col__details:hover .details__icon i {
+  background-color: #ff6600;
+  color: white;
+}
+
+.details__top .details__icon {
+  margin: 0px;
+}
+
+.details__top .details__icon i {
+  border: 1px solid transparent;
+  background-color: rgba(130, 115, 252, .05);
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 25px;
+  color: #ff6600;
+  transition: all 0.5s;
+}
+
+.details__top .details__nameFood {
+  margin-left: 25px;
+}
+
+.details__top .details__nameFood p {
+  color: rgba(22, 28, 45, 0.6);
+  font-size: 18px;
+}
+
+.details__top .details__nameFood a {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 700;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.details__top .details__nameFood a:hover {
+  color: #ff6600;
+}
+
+.details__bottom p {
+  font-size: 18px;
+  line-height: 30px;
+  margin-top: 25px;
+  margin-bottom: 0;
+  color: rgba(22, 28, 45, 0.6);
+}

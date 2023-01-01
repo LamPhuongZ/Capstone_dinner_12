@@ -28,8 +28,14 @@
   <!-- SLICK JS -->
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+  <!-- IFRAME_LIGHTBOX -->
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/englishextra/iframe-lightbox@latest/css/iframe-lightbox.min.css">
+
   <!-- MY CSS -->
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/darkTheme.css">
 
 </head>
 
@@ -318,7 +324,63 @@
   <!-- END FEATURES -->
 
   <!-- DELICIOUSNESS -->
-  <section class="deliciousness"></section>
+  <section class="deliciousness">
+    <div class="deliciousness__mouth">
+      <div class="mouth__content container text__center">
+        <h1 class="title pb-5 w-50 mx-auto text-white">Deliciousness jumping into the mouth.</h1>
+        <div class="content__button d-flex justify-content-center">
+          <button>Read More<i class="fa-solid fa-angle-right"></i></button>
+          <button>Contact Us<i class="fa-solid fa-angle-right"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="deliciousness__counting">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-md-3">
+            <div class="counting__wrapper">
+              <i class="fa-solid fa-building"></i>
+              <h1 class="counter">15,100</h1>
+              <p>Branches</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="counting__wrapper">
+              <i class="fa-solid fa-utensils"></i>
+              <h1 class="counter">19,256</h1>
+              <p>Food Items</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="counting__wrapper">
+              <i class="fa-solid fa-users"></i>
+              <h1 class="counter">12,100</h1>
+              <p>Chefs</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="counting__wrapper">
+              <i class="fa-regular fa-face-smile"></i>
+              <h1 class="counter">2,560</h1>
+              <p>Happy Customers</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="deliciousness__video">
+      <div class="video__iframe container">
+        <img src="./img/p2.jpg" alt="video">
+        <a class="iframe-lightbox-link" href="https://player.vimeo.com/video/63729905?h=ebd4bed471"
+          data-padding-bottom="56.25%">
+          <span>
+            <i class="fa-solid fa-play"></i>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
   <!-- END DELICIOUSNESS -->
 
   <!-- POST -->
@@ -530,6 +592,23 @@
       dots: true
     });
   </script>
+
+  <!-- COUTING UP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+    integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./js/jquery.countup.min.js"></script>
+  <script>$('.counter').countUp()</script>
+
+  <!-- IFRAME-LIGHTBOX -->
+  <script src="https://cdn.jsdelivr.net/gh/englishextra/iframe-lightbox@latest/js/iframe-lightbox.min.js"></script>
+
+  <script>
+    [].forEach.call(document.getElementsByClassName("iframe-lightbox-link"), function (el) {
+      el.lightbox = new IframeLightbox(el);
+    });
+  </script>
+
   <script src="./js/index.js"></script>
 </body>
 

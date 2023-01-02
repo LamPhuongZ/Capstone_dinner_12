@@ -1,0 +1,40 @@
+/* DARK CATEGORIES */
+.dark .categories {
+    background-color: #282828 !important;
+}
+
+.dark .title {
+    color: white;
+}
+
+/* DARK FEATURES */
+.dark .features {
+    background-color: #232220;
+}
+
+.dark .details__nameFood a {
+    color: white;
+}
+
+.dark .details__nameFood p,
+.dark .details__bottom p {
+    color: #c2d0da;
+}
+
+/* DARK DELICIOUSNESS */
+.dark .deliciousness,
+.dark .counting__wrapper {
+    background-color: #232220;
+}
+
+.dark .deliciousness__counting .counting__wrapper:hover {
+    box-shadow: rgba(255, 255, 255, 0.5) 0px 0px 10px 0px;
+}
+
+.dark .counting__wrapper h1 {
+    color: white;
+}
+
+.dark .counting__wrapper p {
+    color: #c2d0da;
+}

@@ -350,6 +350,8 @@ h6 {
 
 .col__nameFood span {
   color: #ffc600;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 /* FEATURES */
@@ -424,6 +426,229 @@ h6 {
   margin-top: 25px;
   margin-bottom: 0;
   color: rgba(22, 28, 45, 0.6);
+}
+
+/* DELICIOUSNESS */
+.deliciousness__mouth {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/banner2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 470px;
+  background-position: center;
+}
+
+.deliciousness__mouth .mouth__content {
+  padding-top: 100px;
+}
+
+.deliciousness__mouth .mouth__content h1 {
+  font-size: 45px;
+  line-height: 55px;
+}
+
+.mouth__content .content__button button {
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0);
+  margin: 0 10px;
+  width: 200px;
+  height: 55px;
+  color: white;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.mouth__content .content__button button:first-child:hover {
+  background-color: white;
+  color: #ff6600;
+}
+
+.mouth__content .content__button button:last-child {
+  background-color: #ff6600;
+  border-color: #ff6600;
+}
+
+.mouth__content .content__button button:last-child:hover {
+  opacity: 0.8;
+}
+
+.mouth__content .content__button button i {
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.deliciousness__counting {
+  position: relative;
+  top: -70px;
+}
+
+.deliciousness__counting .counting__wrapper {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  box-shadow: rgb(1 1 1 / 5%) 1px 1px 5px 0px;
+  text-align: center;
+  height: 250px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: all 0.5s;
+  position: relative;
+}
+
+.deliciousness__counting .counting__wrapper:hover {
+  transform: translateY(-5px);
+  box-shadow: rgb(1 1 1 / 10%) 1px 1px 5px 5px;
+}
+
+.deliciousness__counting .counting__wrapper i {
+  color: white;
+  font-size: 24px;
+  background-color: #ff6600;
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+  margin: auto;
+  line-height: 70px;
+  margin-bottom: 25px;
+  margin-top: 10px;
+}
+
+.deliciousness__counting .counting__wrapper h1 {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.deliciousness__counting .counting__wrapper p {
+  color: rgba(22, 28, 45, 0.6);
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.deliciousness__video {
+  padding-bottom: 100px;
+}
+
+
+
+.deliciousness__video .video__iframe {
+  position: relative;
+}
+
+.deliciousness__video .video__iframe img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 5px;
+  filter: brightness(60%);
+}
+
+.deliciousness__video .video__iframe a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.deliciousness__video .video__iframe span {
+  /* Transform ko áp dụng cho thẻ inline, nên chuyển display */
+  display: inline-block;
+  transform-origin: center;
+  transform: scale(1);
+  transition: all 0.5s;
+  position: relative;
+}
+
+.deliciousness__video .video__iframe span::before {
+  content: " ";
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  animation: arounding 2s infinite;
+}
+
+.deliciousness__video .video__iframe span::after {
+  content: " ";
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  animation: arounding 2s infinite;
+}
+
+
+.deliciousness__video .video__iframe span:hover {
+  transform: scale(1.2);
+}
+
+.deliciousness__video .video__iframe span:hover i {
+  color: white;
+  background-color: #ff6600;
+}
+
+.deliciousness__video .video__iframe a i {
+  color: #ff6600;
+  background-color: white;
+  border: 1px solid transparent;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  z-index: 10;
+  position: relative;
+}
+
+.iframe-lightbox .content-holder {
+  width: 40%;
+}
+
+@media screen and (max-width: 576px) {
+  .mouth__content h1 {
+    width: 100% !important;
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .deliciousness__counting {
+    position: unset;
+  }
+}
+
+@keyframes arounding {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.4);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
 }
 
 /* POST */

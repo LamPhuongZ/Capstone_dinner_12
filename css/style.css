@@ -13,7 +13,11 @@ body {
   line-height: 24px;
   text-align: left;
 }
-
+a {
+  text-decoration: none !important;
+  cursor: pointer;
+  color: inherit;
+}
 h1,
 h2,
 h3,
@@ -206,7 +210,6 @@ h6 {
 
 /* END CAROUSEL CSS */
 
-
 /* RESTAURANTS CSS */
 .restaurants {
   background-color: #ff6600;
@@ -238,7 +241,7 @@ h6 {
   font-weight: 400;
   line-height: 30px;
   display: block;
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
   color: white;
 }
 
@@ -252,7 +255,7 @@ h6 {
   color: #ffdfc9;
   font-size: 18px;
   line-height: 28px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 .restaurants__subsribe {
@@ -269,7 +272,7 @@ h6 {
   width: 70px;
   height: 70px;
   text-align: center;
-  background: rgba(130, 115, 252, .05);
+  background: rgba(130, 115, 252, 0.05);
   line-height: 70px;
   border-radius: 6px;
   transition: all 0.3s;
@@ -337,7 +340,6 @@ h6 {
 
 .col__img a,
 .col__nameFood a {
-  text-decoration: none;
   font-weight: 600;
 }
 
@@ -388,7 +390,7 @@ h6 {
 
 .details__top .details__icon i {
   border: 1px solid transparent;
-  background-color: rgba(130, 115, 252, .05);
+  background-color: rgba(130, 115, 252, 0.05);
   border-radius: 5px;
   padding: 20px;
   font-size: 25px;
@@ -406,7 +408,6 @@ h6 {
 }
 
 .details__top .details__nameFood a {
-  text-decoration: none;
   font-size: 24px;
   font-weight: 700;
   transition: all 0.5s;
@@ -426,15 +427,6 @@ h6 {
 }
 
 /* POST */
-
-/* Phần row ở post này đóng lại vì ảnh hưởng class row hiện có của bootrap và ảnh hưởng hình ảnh khi thiết lập thu nhỏ phần Restaurants */
-/* .row {
-  display: flex;
-  justify-content: start;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-} */
 
 .posts__card {
   position: relative;
@@ -487,6 +479,12 @@ h6 {
   margin-top: 25px;
   margin-bottom: 15px;
 }
+@media (max-width: 991px) {
+  .posts__dis {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
 
 .posts__infor {
   margin: 0;
@@ -517,6 +515,19 @@ h6 {
 }
 
 /* TESTIMONIALS */
+.slick-dots li.slick-active button:before {
+  color: #ff6600;
+  zoom: 1;
+  cursor: pointer;
+  font-size: 10px;
+  opacity: 1;
+}
+.slick-dots li button::before {
+  font-size: 10px;
+}
+.slick-dots li button:hover::before {
+  color: #ff6600;
+}
 .tes__infor {
   max-width: 700px;
   margin: 0 auto;
@@ -547,6 +558,18 @@ h6 {
   letter-spacing: 1px;
   margin-bottom: 20px;
 }
+@media (max-width: 675px) {
+  .tes__comment blockquote {
+    font-size: 22px;
+    line-height: 32px;
+  }
+}
+@media (max-width: 475px) {
+  .tes__comment blockquote {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
 
 .tes__comment p {
   margin: 0;
@@ -556,7 +579,12 @@ h6 {
   color: #161c2db3;
   font-family: "Quicksand", sans-serif;
 }
-
+@media (max-width: 600px) {
+  .tes__comment p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
 .tes__name h3 {
   margin: 0;
   font-weight: 600;
@@ -569,4 +597,161 @@ h6 {
   margin-bottom: 0;
   opacity: 0.8;
   margin-top: 4px;
+}
+/* FOOTER */
+footer {
+  background-color: black;
+}
+footer li {
+  list-style-type: none;
+  margin-bottom: 10px;
+  color: #a5a2a1 !important;
+  font-size: 17px;
+  line-height: 26px;
+}
+footer h2 {
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #fff;
+  padding: 0;
+  margin-bottom: 15px;
+}
+footer a:hover {
+  color: #ff6600 !important;
+}
+@media (max-width: 415px) {
+  footer h2 a {
+    font-size: 26px;
+  }
+}
+footer h6 {
+  color: white;
+  font-size: 22px;
+  line-height: 28px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  position: relative;
+}
+@media (max-width: 992px) {
+  footer h6 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+}
+footer p {
+  font-size: 17px;
+  line-height: 26px;
+  color: #a5a2a1;
+}
+.footer__body {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.footer__social i {
+  color: #ff6600;
+  background-color: white;
+  margin-right: 10px;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 36px;
+}
+.footer__social a i:hover {
+  color: white;
+  background-color: #ff6600;
+  transition: all 0.3s;
+}
+.footer__sub input {
+  padding: 14px 20px;
+  font-size: 18px;
+  line-height: 28px;
+  border: 1px solid transparent;
+  outline: none;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 10px;
+}
+.footer__sub .btn__style {
+  padding: 12px 45px;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 700;
+  transition: 0.3s ease-in;
+  border-radius: 5px;
+  background-color: #ff6600;
+  border: 2px solid transparent;
+  color: white;
+}
+.footer__sub .btn__style:hover {
+  opacity: 0.8;
+}
+
+.copyRight {
+  background-color: black;
+  color: white;
+  border-top: 1px solid rgb(255 255 255 / 5%);
+  padding: 20px 0;
+}
+.copy__left {
+  color: #ddd;
+  font-size: 17px;
+}
+.copy__left span {
+  color: #ff6600;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.copy__left a:hover {
+  color: white;
+  cursor: pointer;
+}
+.copyRight li {
+  list-style-type: none;
+  color: #a5a2a1;
+  font-size: 17px;
+  line-height: 26px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.copy__right {
+  padding: 0 15px;
+}
+.copy__right ul {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+.copy__right a:hover {
+  color: #ff6600 !important;
+}
+.backToTop {
+  height: 50px;
+  width: 50px;
+  border-radius: 35px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 50px;
+  background-color: #ff6600;
+  text-align: center;
+  color: white;
+  display: block;
+  /* cài đặt vị trí cố định theo body */
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  /* ẩn nút back to top */
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.backToTop:hover {
+  text-decoration: none;
+  color: white;
+}
+.cd-top--is-visible {
+  visibility: visible;
+  opacity: 1;
 }

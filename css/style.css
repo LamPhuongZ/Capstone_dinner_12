@@ -431,8 +431,11 @@ button#trigger-overlay {
 
 /* END CAROUSEL CSS */
 
-
 /* ABOUT CSS */
+.about {
+  background: white;
+}
+
 .about__title {
   color: #ff6600;
   font-size: 20px;

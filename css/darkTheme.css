@@ -1,40 +1,74 @@
+/* GLOBAL */
+.title {
+  color: white;
+}
+
 /* DARK CATEGORIES */
 .dark .categories {
-    background-color: #282828 !important;
+  background-color: #282828 !important;
 }
 
 .dark .title {
-    color: white;
+  color: white;
 }
 
 /* DARK FEATURES */
 .dark .features {
-    background-color: #232220;
+  background-color: #232220;
 }
 
 .dark .details__nameFood a {
-    color: white;
+  color: white;
 }
 
 .dark .details__nameFood p,
 .dark .details__bottom p {
-    color: #c2d0da;
+  color: #c2d0da;
 }
 
 /* DARK DELICIOUSNESS */
 .dark .deliciousness,
 .dark .counting__wrapper {
-    background-color: #232220;
+  background-color: #232220;
 }
 
 .dark .deliciousness__counting .counting__wrapper:hover {
-    box-shadow: rgba(255, 255, 255, 0.5) 0px 0px 10px 0px;
+  box-shadow: rgba(255, 255, 255, 0.5) 0px 0px 10px 0px;
 }
 
 .dark .counting__wrapper h1 {
-    color: white;
+  color: white;
 }
 
 .dark .counting__wrapper p {
-    color: #c2d0da;
+  color: #c2d0da;
+}
+/* DARK POSTS */
+.posts {
+  background-color: #282828;
+}
+.posts__dis,
+.posts__name,
+.tes__comment blockquote,
+.tes__name h3 {
+  color: #eee;
+}
+.posts__infor,
+.tes__comment p,
+.tes__name p {
+  color: #c2d0da;
+}
+.testimonials {
+  background-color: #232220;
+}
+.footer__social i {
+  background-color: #232220;
+}
+.footer__social a i:hover {
+  color: white;
+  background-color: #ff6600;
+}
+.footer__sub input {
+  color: #c2d0da;
+  background-color: #232220;
 }

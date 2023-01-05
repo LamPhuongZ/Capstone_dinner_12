@@ -13,6 +13,7 @@
   <!-- GOOGLE FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <!-- Quicksand Font -->
   <link
     href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Oswald:wght@300;400;500;600;700&display=swap"
@@ -20,6 +21,7 @@
 
   <!-- Pacifico Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
   <!-- FONT AWESOME -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
@@ -72,7 +74,7 @@
           </div>
 
           <div class="mobile__button text-center">
-            <button id="trigger-overlay" type="button">
+            <button id="nav__toggler" type="button">
               <i class="fa fa-bars" aria-hidden="true"></i>
             </button>
           </div>
@@ -126,8 +128,8 @@
       <div class="row">
         <div class="col-lg-5">
           <div class="about__left">
-            <h6 class="about__title">About Us</h6>
-            <h3 class="about__we mb-4">We found our creative space that is open for you.</h3>
+            <h6 class="firt__title">About Us</h6>
+            <h3 class="general__title mb-4">We found our creative space that is open for you.</h3>
           </div>
         </div>
 
@@ -162,8 +164,8 @@
         <div class="col-lg-6 px-lg-4 py-lg-3 py-4">
           <div class="restaurants__content p-md-5 p-3">
             <!-- <div class="restaurants__info"> -->
-            <h6 class="restaurants__than restaurants__than1">More than 3000 restaurants</h6>
-            <h3 class="restaurants__book restaurants__book1">Book a table easly at the best price</h3>
+            <h6 class="firt__title firt__title1">More than 3000 Restaurants</h6>
+            <h3 class="general__title general__title1">Book a table easly at the best price</h3>
             <p class="my-3"> Vestibulum ante ipsum primis in faucibus orci luctus
               turpis sodales quis. Integer sit amet mattis quam.Vivamus a ligula quam tesque et libero ut justo
               ultrices in.</p>
@@ -402,8 +404,8 @@
   </section>
   <!-- END FEATURES -->
 
-  <!-- DELICIOUSNESS -->
-  <section class="deliciousness">
+   <!-- DELICIOUSNESS -->
+   <section class="deliciousness">
     <div class="deliciousness__mouth">
       <div class="mouth__content container text__center">
         <h1 class="title pb-5 w-50 mx-auto text-white">Deliciousness jumping into the mouth.</h1>
@@ -754,6 +756,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+
   <!-- SLICK JS -->
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script>
@@ -763,37 +766,26 @@
     });
   </script>
 
+  <!-- COUTING UP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+    integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./js/jquery.countup.min.js"></script>
+  <script>$('.counter').countUp()</script>
+
+  <!-- IFRAME-LIGHTBOX -->
+  <script src="https://cdn.jsdelivr.net/gh/englishextra/iframe-lightbox@latest/js/iframe-lightbox.min.js"></script>
+
+  <script>
+    [].forEach.call(document.getElementsByClassName("iframe-lightbox-link"), function (el) {
+      el.lightbox = new IframeLightbox(el);
+    });
+  </script>
+
   <!-- MENU JS -->
   <!-- BACK TO TOP -->
   <script src="./js/util.js"></script>
   <script src="./js/main.js"></script>
-  <!-- MY JS -->
-  <script>
-    $(window).on("scroll", function () {
-      var scroll = $(window).scrollTop();
-
-      if (scroll >= 80) {
-        $("#site-header").addClass("nav-fixed");
-      } else {
-        $("#site-header").removeClass("nav-fixed");
-      }
-    });
-
-    //Main navigation Active Class Add Remove
-    $(".navbar-toggler").on("click", function () {
-      $("header").toggleClass("active");
-    });
-    $(document).on("ready", function () {
-      if ($(window).width() > 991) {
-        $("header").removeClass("active");
-      }
-      $(window).on("resize", function () {
-        if ($(window).width() > 991) {
-          $("header").removeClass("active");
-        }
-      });
-    });
-  </script>
 
   <!-- MENU NAV -->
   <script src="./js/modernizr-2.6.2.min.js"></script>

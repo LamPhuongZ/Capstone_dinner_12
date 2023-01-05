@@ -5,12 +5,12 @@
   padding: 0;
 }
 
-html, body {
+html,
+body {
   background: white;
   color: rgba(22, 28, 45, 0.7);
   font-family: "Quicksand", sans-serif;
 }
-
 
 body {
   font-family: "Quicksand", sans-serif;
@@ -225,7 +225,7 @@ header {
 
 .mode-container i {
   color: white;
-} 
+}
 
 button#navbar__toggler {
   outline: none;
@@ -239,129 +239,129 @@ button#navbar__toggler {
 
 /* Overlay style */
 .overlay {
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	z-index: 99999;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99999;
 }
 
 /* Overlay style */
 .overlay {
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	background: rgb(6 3 0 / 0.77);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgb(6 3 0 / 0.77);
 }
 
 /* Overlay closing cross */
 .overlay .overlay-close {
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    right: 40px;
-    top: 40px;
-    overflow: hidden;
-    border: none;
-    background: #ff6600;
-    color: white;
-    border-radius: 6px;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  overflow: hidden;
+  border: none;
+  background: #ff6600;
+  color: white;
+  border-radius: 6px;
 }
 
 button#trigger-overlay {
-	outline: none;
-	border: none;
-	background: none;
-	text-align: center;
-	color: #fbfdfb;
-	font-size: 1.95em;
-	padding: 0 8px;
+  outline: none;
+  border: none;
+  background: none;
+  text-align: center;
+  color: #fbfdfb;
+  font-size: 1.95em;
+  padding: 0 8px;
 }
 
 /* Menu style */
 .overlay nav {
-	text-align: center;
-	position: relative;
-	top: 50%;
-	height: 60%;
-	/* -webkit-transform: translateY(-50%); */
-	transform: translateY(-50%);
+  text-align: center;
+  position: relative;
+  top: 50%;
+  height: 60%;
+  /* -webkit-transform: translateY(-50%); */
+  transform: translateY(-50%);
 }
 .overlay ul {
-	list-style: none;
-	padding: 0;
-	margin: 0 auto;
-	display: inline-block;
-	height: 100%;
-	position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  height: 100%;
+  position: relative;
 }
 .overlay ul li {
-	display: block;
-	/* -webkit-backface-visibility: hidden; */
-	backface-visibility: hidden;
-    line-height:3em;
+  display: block;
+  /* -webkit-backface-visibility: hidden; */
+  backface-visibility: hidden;
+  line-height: 3em;
 }
 .overlay ul li a {
-	font-size: 20px;
-	font-weight: 600;
-	display: block;
-	color: white;
-	/* -webkit-transition: color 0.2s; */
-	transition: color 0.2s;
+  font-size: 20px;
+  font-weight: 600;
+  display: block;
+  color: white;
+  /* -webkit-transition: color 0.2s; */
+  transition: color 0.2s;
 }
 
 .overlay ul li a:hover,
 .overlay ul li a:focus {
-	color: #ff6600;
+  color: #ff6600;
 }
 
 /* Effects */
 .overlay-scale {
-	visibility: hidden;
-	opacity: 0;
-	/* -webkit-transform: scale(0.9); */
-	transform: scale(0.9);
-	/* -webkit-transition: -webkit-transform 0.2s, opacity 0.2s, visibility 0s 0.2s; */
-	transition: transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+  visibility: hidden;
+  opacity: 0;
+  /* -webkit-transform: scale(0.9); */
+  transform: scale(0.9);
+  /* -webkit-transition: -webkit-transform 0.2s, opacity 0.2s, visibility 0s 0.2s; */
+  transition: transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
 }
 
 .overlay-scale.open {
-	visibility: visible;
-	opacity: 1;
-	/* -webkit-transform: scale(1); */
-	transform: scale(1);
-	/* -webkit-transition: -webkit-transform 0.4s, opacity 0.4s; */
-	transition: transform 0.4s, opacity 0.4s;
+  visibility: visible;
+  opacity: 1;
+  /* -webkit-transform: scale(1); */
+  transform: scale(1);
+  /* -webkit-transition: -webkit-transform 0.4s, opacity 0.4s; */
+  transition: transform 0.4s, opacity 0.4s;
 }
 
 @media screen and (max-height: 30.5em) {
-	.overlay nav {
-		height: 70%;
-		font-size: 34px;
-	}
+  .overlay nav {
+    height: 70%;
+    font-size: 34px;
+  }
 
-	.overlay ul li {
-		min-height: 34px;
-	}
+  .overlay ul li {
+    min-height: 34px;
+  }
 }
-@media (max-width:767px) {
-	.overlay ul li a {
-		font-size: 16px;
-	}
-	.overlay ul li {
-		line-height: 2.5em;
-	}
+@media (max-width: 767px) {
+  .overlay ul li a {
+    font-size: 16px;
+  }
+  .overlay ul li {
+    line-height: 2.5em;
+  }
 }
-@media (max-width:600px) {
-	.overlay ul li a {
-		font-size: 16px;
-	}
-	.overlay ul li {
-		line-height: 2.2em;
-	}
+@media (max-width: 600px) {
+  .overlay ul li a {
+    font-size: 16px;
+  }
+  .overlay ul li {
+    line-height: 2.2em;
+  }
 }
 
 /* END HEADER CSS */
@@ -442,7 +442,7 @@ button#trigger-overlay {
   font-weight: 400;
   line-height: 30px;
   display: block;
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
 
   /* letter-spacing: dùng để định dạng khoảng cách giữa các ký tự trong một đoạn văn bản. Thuộc tính này có thể áp dụng cho tất cả các phần tử của cả HTML */
   letter-spacing: 1px;
@@ -458,7 +458,7 @@ button#trigger-overlay {
   font-size: 18px;
   line-height: 28px;
   color: rgba(22, 28, 45, 0.7);
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 @media (max-width: 600px) {
@@ -537,7 +537,7 @@ button#trigger-overlay {
   line-height: 30px;
   color: #ff6600;
   display: block;
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
   letter-spacing: 1px;
 }
 
@@ -551,7 +551,7 @@ p {
   color: #ffdfc9;
   font-size: 18px;
   line-height: 28px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 .restaurants__subsribe {
@@ -568,7 +568,7 @@ p {
   width: 70px;
   height: 70px;
   text-align: center;
-  background: rgba(130, 115, 252, .05);
+  background: rgba(130, 115, 252, 0.05);
   line-height: 70px;
   border-radius: 6px;
   transition: all 0.3s;
@@ -614,7 +614,7 @@ p {
   font-size: 18px;
   line-height: 28px;
   color: rgba(22, 28, 45, 0.7);
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 @media (max-width: 600px) {
@@ -635,7 +635,7 @@ p {
 @media (max-width: 375px) {
   .restaurants__than {
     font-size: 16px !important;
-    letter-spacing: .5px;
+    letter-spacing: 0.5px;
   }
 }
 
@@ -658,7 +658,6 @@ p {
 }
 
 @media (max-width: 375px) {
-
   .restaurants__book,
   .restaurants__book.restaurants__book1 {
     font-size: 24px !important;
@@ -667,7 +666,6 @@ p {
 }
 
 @media (max-width: 480px) {
-
   .restaurants__book,
   .restaurants__book.restaurants__book1 {
     font-size: 26px !important;
@@ -676,7 +674,6 @@ p {
 }
 
 @media (max-width: 600px) {
-
   .restaurants__book,
   .restaurants__book.restaurants__book1 {
     font-size: 30px !important;
@@ -685,7 +682,6 @@ p {
 }
 
 @media (max-width: 1080px) {
-
   .restaurants__book,
   .restaurants__book.restaurants__book1 {
     font-size: 32px !important;
@@ -701,7 +697,6 @@ p {
     grid-gap: 20px 10px;
   }
 }
-
 
 /* END RESTAURANTS CSS */
 
@@ -825,7 +820,12 @@ p {
 
 /* DELICIOUSNESS */
 .deliciousness__mouth {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/banner2.jpg);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(../img/banner2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 470px;
@@ -932,8 +932,6 @@ p {
   padding-bottom: 100px;
 }
 
-
-
 .deliciousness__video .video__iframe {
   position: relative;
 }
@@ -985,7 +983,6 @@ p {
   top: -10px;
   animation: arounding 2s infinite;
 }
-
 
 .deliciousness__video .video__iframe span:hover {
   transform: scale(1.2);
@@ -1137,16 +1134,21 @@ p {
 /* TESTIMONIALS */
 .slick-dots li.slick-active button:before {
   color: #ff6600;
-  zoom: 1;
   cursor: pointer;
-  font-size: 10px;
+  font-size: 12px;
   opacity: 1;
+  margin-right: 5px;
 }
 .slick-dots li button::before {
-  font-size: 10px;
+  font-size: 12px;
+  color: #d8d8d8;
+  opacity: 1;
 }
 .slick-dots li button:hover::before {
   color: #ff6600;
+}
+.testimonials {
+  background-color: white;
 }
 .tes__infor {
   max-width: 700px;

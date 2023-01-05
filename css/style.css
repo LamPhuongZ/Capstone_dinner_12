@@ -3,6 +3,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Ubuntu", "Cantarell", sans-serif;
 }
 
 html,
@@ -20,11 +21,13 @@ body {
   line-height: 24px;
   text-align: left;
 }
+
 a {
   text-decoration: none !important;
   cursor: pointer;
   color: inherit;
 }
+
 h1,
 h2,
 h3,
@@ -121,16 +124,78 @@ h6 {
   }
 }
 
-/* .light * {
-  color: black;
+p {
+  font-size: 18px;
+  line-height: 28px;
+  color: rgba(22, 28, 45, 0.7);
+  font-family: "Quicksand", sans-serif;
 }
 
-.dark * {
-  color: red;
-} */
+@media (max-width: 600px) {
+  p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
 
-/* .light header {}
-.dark header {} */
+.firt__title {
+  color: #ff6600;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  display: block;
+  font-family: "Pacifico", cursive;
+
+  /* letter-spacing: dùng để định dạng khoảng cách giữa các ký tự trong một đoạn văn bản. Thuộc tính này có thể áp dụng cho tất cả các phần tử của cả HTML */
+  letter-spacing: 1px;
+}
+
+.general__title {
+  font-size: 38px;
+  line-height: 48px;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .firt__title {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 375px) {
+  .firt__title {
+    font-size: 16px !important;
+    letter-spacing: .5px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .general__title {
+    font-size: 32px !important;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .general__title {
+    font-size: 30px !important;
+    line-height: 38px;
+  }
+}
+
+@media (max-width: 480px) {
+  .general__title {
+    font-size: 26px !important;
+    line-height: 36px;
+  }
+}
+
+@media (max-width: 375px) {
+  .general__title {
+    font-size: 24px !important;
+    line-height: 34px;
+  }
+}
 
 /* HEADER CSS */
 header {
@@ -144,7 +209,7 @@ header {
   display: grid;
   grid-template-columns: 4fr 1fr;
   grid-gap: 20px;
-  padding: 40px 0 50px 0;
+  padding: 40px 0 20px 0;
   align-items: center;
 }
 
@@ -178,7 +243,6 @@ header {
   padding: 10px 50px 10px 20px;
   height: 45px;
   color: rgba(22, 28, 45, 0.7);
-  border: none;
   font-weight: 400;
   border-radius: 6px;
   position: relative;
@@ -214,7 +278,6 @@ header {
 
 #switchButton .fa-sun {
   display: none;
-  /* font-size: 300px; */
 }
 
 #switchButton .fa-moon {
@@ -227,7 +290,7 @@ header {
   color: white;
 }
 
-button#navbar__toggler {
+button#nav__toggler {
   outline: none;
   border: none;
   background: none;
@@ -271,25 +334,15 @@ button#navbar__toggler {
   border-radius: 6px;
 }
 
-button#trigger-overlay {
-  outline: none;
-  border: none;
-  background: none;
-  text-align: center;
-  color: #fbfdfb;
-  font-size: 1.95em;
-  padding: 0 8px;
-}
-
 /* Menu style */
 .overlay nav {
   text-align: center;
   position: relative;
   top: 50%;
   height: 60%;
-  /* -webkit-transform: translateY(-50%); */
   transform: translateY(-50%);
 }
+
 .overlay ul {
   list-style: none;
   padding: 0;
@@ -298,18 +351,18 @@ button#trigger-overlay {
   height: 100%;
   position: relative;
 }
+
 .overlay ul li {
   display: block;
-  /* -webkit-backface-visibility: hidden; */
   backface-visibility: hidden;
   line-height: 3em;
 }
+
 .overlay ul li a {
   font-size: 20px;
   font-weight: 600;
   display: block;
   color: white;
-  /* -webkit-transition: color 0.2s; */
   transition: color 0.2s;
 }
 
@@ -322,18 +375,14 @@ button#trigger-overlay {
 .overlay-scale {
   visibility: hidden;
   opacity: 0;
-  /* -webkit-transform: scale(0.9); */
   transform: scale(0.9);
-  /* -webkit-transition: -webkit-transform 0.2s, opacity 0.2s, visibility 0s 0.2s; */
   transition: transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
 }
 
 .overlay-scale.open {
   visibility: visible;
   opacity: 1;
-  /* -webkit-transform: scale(1); */
   transform: scale(1);
-  /* -webkit-transition: -webkit-transform 0.4s, opacity 0.4s; */
   transition: transform 0.4s, opacity 0.4s;
 }
 
@@ -347,20 +396,54 @@ button#trigger-overlay {
     min-height: 34px;
   }
 }
-@media (max-width: 767px) {
+
+@media (max-width:767px) {
   .overlay ul li a {
     font-size: 16px;
   }
+
   .overlay ul li {
     line-height: 2.5em;
   }
 }
-@media (max-width: 600px) {
+
+@media (max-width:600px) {
   .overlay ul li a {
     font-size: 16px;
   }
+
   .overlay ul li {
     line-height: 2.2em;
+  }
+}
+
+@media (max-width: 800px) {
+  .header__content {
+    margin-top: 65px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header__content {
+    margin-top: 65px;
+  }
+}
+
+@media (max-width: 479px) {
+  .header__content {
+    margin-top: 65px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    min-height: 450px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header__right .search__bar {
+    display: none;
   }
 }
 
@@ -372,7 +455,7 @@ button#trigger-overlay {
     url(../img/banner1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: inherit;
 
   /* background-attachment: dùng để kiểm soát hình nền liên quan đến khung hình
   - Fixed: hình nền được cố định vào khung nhìn và không di chuyển, ngay cả người dùng di chuyển dọc theo khung.
@@ -406,7 +489,7 @@ button#trigger-overlay {
 
 .carousel .carousel__content p {
   font-size: 16px;
-  line-height: 18px;
+  line-height: 28px;
   color: white;
 }
 
@@ -414,7 +497,6 @@ button#trigger-overlay {
   background: transparent;
   color: white;
   border: 2px solid white;
-
   padding: 12px 45px;
   font-size: 16px;
   line-height: 30px;
@@ -429,70 +511,90 @@ button#trigger-overlay {
   color: #ff6600;
 }
 
+@media (max-width: 800px) {
+  .carousel {
+    min-height: 600px;
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel {
+    min-height: 450px;
+  }
+}
+
+@media (max-width: 479px) {
+  .carousel {
+    min-height: 465px
+  }
+}
+
+@media (max-width: 1190px) {
+  .carousel .carousel__title {
+    margin-top: 200px;
+  }
+}
+
+@media (max-width: 992px) {
+  .carousel .carousel__title {
+    margin-top: 200px;
+  }
+}
+
+@media (max-width: 800px) {
+  .carousel .carousel__title {
+    margin-top: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel .carousel__title {
+    max-width: 500px;
+    margin-top: 140px;
+  }
+}
+
+@media (max-width: 1190px) {
+  .carousel .carousel__title h3 {
+    font-size: 48px;
+    line-height: 58px;
+  }
+}
+
+@media (max-width: 992px) {
+  .carousel .carousel__title h3 {
+    font-size: 44px;
+    line-height: 53px;
+  }
+}
+
+@media (max-width: 800px) {
+  .carousel .carousel__title h3 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel .carousel__title h3 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn__white,
+  .btn__style {
+    padding: 10px 21px;
+  }
+}
+
 /* END CAROUSEL CSS */
 
 /* ABOUT CSS */
 .about {
   background: white;
-}
-
-.about__title {
-  color: #ff6600;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 30px;
-  display: block;
-  font-family: "Pacifico", cursive;
-
-  /* letter-spacing: dùng để định dạng khoảng cách giữa các ký tự trong một đoạn văn bản. Thuộc tính này có thể áp dụng cho tất cả các phần tử của cả HTML */
-  letter-spacing: 1px;
-}
-
-.about__we {
-  font-size: 38px;
-  line-height: 48px;
-  font-weight: 600;
-}
-
-.about_right p {
-  font-size: 18px;
-  line-height: 28px;
-  color: rgba(22, 28, 45, 0.7);
-  font-family: "Quicksand", sans-serif;
-}
-
-@media (max-width: 600px) {
-  p {
-    font-size: 16px;
-    line-height: 26px;
-  }
-}
-
-@media (max-width: 600px) {
-  .about__title {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 480px) {
-  .about__we {
-    font-size: 26px !important;
-    line-height: 36px;
-  }
-}
-
-@media (max-width: 600px) {
-  .about__we {
-    font-size: 30px !important;
-    line-height: 38px;
-  }
-}
-
-@media (max-width: 1080px) {
-  .about__we {
-    font-size: 32px !important;
-    line-height: 40px;
-  }
 }
 
 /* END ABOUT CSS */
@@ -511,7 +613,6 @@ button#trigger-overlay {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
   position: relative;
   min-height: 600px;
 }
@@ -519,7 +620,6 @@ button#trigger-overlay {
 .restaurants .restaurants__image::before {
   content: "";
   background: rgb(16 15 19 / 0.46);
-
   position: absolute;
   top: 0;
   left: 0;
@@ -527,31 +627,8 @@ button#trigger-overlay {
   min-height: 100%;
 }
 
-.restaurants__than.restaurants__than1 {
+.firt__title.firt__title1 {
   color: white;
-}
-
-.restaurants__than {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 30px;
-  color: #ff6600;
-  display: block;
-  font-family: "Pacifico", cursive;
-  letter-spacing: 1px;
-}
-
-.restaurants__book {
-  font-size: 38px;
-  line-height: 48px;
-  font-weight: 600;
-}
-
-p {
-  color: #ffdfc9;
-  font-size: 18px;
-  line-height: 28px;
-  font-family: "Quicksand", sans-serif;
 }
 
 .restaurants__subsribe {
@@ -610,41 +687,6 @@ p {
   text-decoration: none;
 }
 
-p {
-  font-size: 18px;
-  line-height: 28px;
-  color: rgba(22, 28, 45, 0.7);
-  font-family: "Quicksand", sans-serif;
-}
-
-@media (max-width: 600px) {
-  p {
-    font-size: 16px;
-    line-height: 26px;
-  }
-}
-
-/* @media (max-width: 1200px) {
-
-  h3,
-  .h3 {
-    font-size: calc(1.3rem + 0.6vw);
-  }
-} */
-
-@media (max-width: 375px) {
-  .restaurants__than {
-    font-size: 16px !important;
-    letter-spacing: 0.5px;
-  }
-}
-
-@media (max-width: 600px) {
-  .restaurants__than {
-    font-size: 16px;
-  }
-}
-
 @media (max-width: 992px) {
   .restaurants__subsribe__item .restaurants__subsribe__link {
     font-size: 18px;
@@ -657,47 +699,13 @@ p {
   }
 }
 
-@media (max-width: 375px) {
-  .restaurants__book,
-  .restaurants__book.restaurants__book1 {
-    font-size: 24px !important;
-    line-height: 34px;
-  }
-}
-
-@media (max-width: 480px) {
-  .restaurants__book,
-  .restaurants__book.restaurants__book1 {
-    font-size: 26px !important;
-    line-height: 36px;
-  }
-}
-
-@media (max-width: 600px) {
-  .restaurants__book,
-  .restaurants__book.restaurants__book1 {
-    font-size: 30px !important;
-    line-height: 38px;
-  }
-}
-
-@media (max-width: 1080px) {
-  .restaurants__book,
-  .restaurants__book.restaurants__book1 {
-    font-size: 32px !important;
-    line-height: 40px;
-  }
-}
-
 @media (max-width: 992px) {
   .restaurants__subsribe {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* margin-top: 30px; */
     grid-gap: 20px 10px;
   }
 }
-
 /* END RESTAURANTS CSS */
 
 /* CATEGORIES */
@@ -820,12 +828,7 @@ p {
 
 /* DELICIOUSNESS */
 .deliciousness__mouth {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)
-    ),
-    url(../img/banner2.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/banner2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 470px;
@@ -932,6 +935,8 @@ p {
   padding-bottom: 100px;
 }
 
+
+
 .deliciousness__video .video__iframe {
   position: relative;
 }
@@ -983,6 +988,7 @@ p {
   top: -10px;
   animation: arounding 2s infinite;
 }
+
 
 .deliciousness__video .video__iframe span:hover {
   transform: scale(1.2);
@@ -1096,6 +1102,7 @@ p {
   margin-top: 25px;
   margin-bottom: 15px;
 }
+
 @media (max-width: 991px) {
   .posts__dis {
     font-size: 20px;
@@ -1139,17 +1146,21 @@ p {
   opacity: 1;
   margin-right: 5px;
 }
+
 .slick-dots li button::before {
   font-size: 12px;
   color: #d8d8d8;
   opacity: 1;
 }
+
 .slick-dots li button:hover::before {
   color: #ff6600;
 }
+
 .testimonials {
   background-color: white;
 }
+
 .tes__infor {
   max-width: 700px;
   margin: 0 auto;
@@ -1180,12 +1191,14 @@ p {
   letter-spacing: 1px;
   margin-bottom: 20px;
 }
+
 @media (max-width: 675px) {
   .tes__comment blockquote {
     font-size: 22px;
     line-height: 32px;
   }
 }
+
 @media (max-width: 475px) {
   .tes__comment blockquote {
     font-size: 20px;
@@ -1201,12 +1214,14 @@ p {
   color: #161c2db3;
   font-family: "Quicksand", sans-serif;
 }
+
 @media (max-width: 600px) {
   .tes__comment p {
     font-size: 16px;
     line-height: 26px;
   }
 }
+
 .tes__name h3 {
   margin: 0;
   font-weight: 600;
@@ -1220,10 +1235,12 @@ p {
   opacity: 0.8;
   margin-top: 4px;
 }
+
 /* FOOTER */
 footer {
   background-color: black;
 }
+
 footer li {
   list-style-type: none;
   margin-bottom: 10px;
@@ -1231,6 +1248,7 @@ footer li {
   font-size: 17px;
   line-height: 26px;
 }
+
 footer h2 {
   font-size: 30px;
   font-weight: 600;
@@ -1239,14 +1257,17 @@ footer h2 {
   padding: 0;
   margin-bottom: 15px;
 }
+
 footer a:hover {
   color: #ff6600 !important;
 }
+
 @media (max-width: 415px) {
   footer h2 a {
     font-size: 26px;
   }
 }
+
 footer h6 {
   color: white;
   font-size: 22px;
@@ -1255,21 +1276,25 @@ footer h6 {
   font-weight: 700;
   position: relative;
 }
+
 @media (max-width: 992px) {
   footer h6 {
     font-size: 20px;
     margin-bottom: 20px;
   }
 }
+
 footer p {
   font-size: 17px;
   line-height: 26px;
   color: #a5a2a1;
 }
+
 .footer__body {
   margin-right: -15px;
   margin-left: -15px;
 }
+
 .footer__social i {
   color: #ff6600;
   background-color: white;
@@ -1281,11 +1306,13 @@ footer p {
   font-size: 16px;
   line-height: 36px;
 }
+
 .footer__social a i:hover {
   color: white;
   background-color: #ff6600;
   transition: all 0.3s;
 }
+
 .footer__sub input {
   padding: 14px 20px;
   font-size: 18px;
@@ -1296,6 +1323,7 @@ footer p {
   width: 100%;
   margin-top: 10px;
 }
+
 .footer__sub .btn__style {
   padding: 12px 45px;
   font-size: 16px;
@@ -1307,6 +1335,7 @@ footer p {
   border: 2px solid transparent;
   color: white;
 }
+
 .footer__sub .btn__style:hover {
   opacity: 0.8;
 }
@@ -1317,19 +1346,23 @@ footer p {
   border-top: 1px solid rgb(255 255 255 / 5%);
   padding: 20px 0;
 }
+
 .copy__left {
   color: #ddd;
   font-size: 17px;
 }
+
 .copy__left span {
   color: #ff6600;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+
 .copy__left a:hover {
   color: white;
   cursor: pointer;
 }
+
 .copyRight li {
   list-style-type: none;
   color: #a5a2a1;
@@ -1338,17 +1371,21 @@ footer p {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+
 .copy__right {
   padding: 0 15px;
 }
+
 .copy__right ul {
   display: flex;
   align-items: center;
   margin-bottom: 0;
 }
+
 .copy__right a:hover {
   color: #ff6600 !important;
 }
+
 .backToTop {
   height: 50px;
   width: 50px;
@@ -1369,10 +1406,12 @@ footer p {
   opacity: 0;
   transition: all 0.3s;
 }
+
 .backToTop:hover {
   text-decoration: none;
   color: white;
 }
+
 .cd-top--is-visible {
   visibility: visible;
   opacity: 1;

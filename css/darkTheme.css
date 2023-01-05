@@ -1,7 +1,62 @@
 /* GLOBAL */
-.title {
+
+html,
+body {
+  background: #232220;
+  color: #c2d0da;
+  font-family: "Quicksand", sans-serif;
+}
+
+/* END GLOBAL */
+
+/* DARK HEADER CSS */
+.dark #switchButton .fa-sun {
+  display: block;
+  font-size: 20px;
   color: white;
 }
+
+.dark #switchButton .fa-moon {
+  display: none;
+}
+
+.dark .header__right .search__bar .search .search__input {
+  display: flex;
+  padding: 10px 50px 10px 20px;
+  height: 45px;
+  color: rgba(22, 28, 45, 0.7);
+  border: none;
+  font-weight: 400;
+  border-radius: 6px;
+  position: relative;
+  right: 0;
+  background: #282828;
+  outline: 0;
+  border: 1px solid #282828;
+}
+
+/* END DARK HEADER CSS */
+
+/* DARK ABOUT CSS */
+.dark .about {
+  background: #282828;
+}
+
+.dark .about__we {
+  font-size: 38px;
+  line-height: 48px;
+  font-weight: 600;
+  color: #eee;
+}
+
+.dark .about_right p {
+  font-size: 18px;
+  line-height: 28px;
+  color: #c2d0da;
+  font-family: "Quicksand", sans-serif;
+}
+
+/* END DARK ABOUT CSS */
 
 /* DARK CATEGORIES */
 .dark .categories {
@@ -44,31 +99,56 @@
   color: #c2d0da;
 }
 /* DARK POSTS */
-.posts {
-  background-color: #282828;
+.dark .posts {
+  background-color: #282828 !important;
 }
-.posts__dis,
-.posts__name,
-.tes__comment blockquote,
-.tes__name h3 {
-  color: #eee;
+.dark .posts__dis {
+  color: white;
 }
-.posts__infor,
-.tes__comment p,
-.tes__name p {
+.dark .posts__infor {
   color: #c2d0da;
 }
-.testimonials {
+.dark .posts__name {
+  color: #eee;
+}
+.dark .posts__readMore span {
+  color: #eee;
+}
+.dark .testimonials {
   background-color: #232220;
 }
-.footer__social i {
+.dark blockquote {
+  color: #eee;
+}
+.dark .tes__comment p {
+  color: #c2d0da;
+}
+.dark .tes__name h3 {
+  color: #eee;
+}
+.dark .tes__name p {
+  color: #c2d0da;
+}
+.dark .slick-dots li.slick-active button:before {
+  color: #ff6600;
+  cursor: pointer;
+  font-size: 12px;
+  opacity: 1;
+}
+.dark .slick-dots li button::before {
+  font-size: 12px;
+}
+.dark .slick-dots li button:hover::before {
+  color: #ff6600;
+}
+.dark .footer__social i {
+  color: #ff6600;
   background-color: #232220;
 }
-.footer__social a i:hover {
+.dark .footer__social i:hover {
   color: white;
   background-color: #ff6600;
 }
-.footer__sub input {
-  color: #c2d0da;
+.dark .footer__sub input {
   background-color: #232220;
 }

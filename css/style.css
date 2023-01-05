@@ -5,6 +5,13 @@
   padding: 0;
 }
 
+html,
+body {
+  background: white;
+  color: rgba(22, 28, 45, 0.7);
+  font-family: "Quicksand", sans-serif;
+}
+
 body {
   font-family: "Quicksand", sans-serif;
   color: #232121;
@@ -126,11 +133,235 @@ h6 {
 .dark header {} */
 
 /* HEADER CSS */
-.light header {
+header {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
+}
+
+.header__content {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-gap: 20px;
+  padding: 40px 0 50px 0;
+  align-items: center;
+}
+
+.header__content h1 a {
+  font-size: 36px;
+  font-weight: 700;
+  color: white;
+}
+
+.header__content a {
+  text-decoration: none;
+}
+
+.header__right {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  align-items: center;
+}
+
+.header__right .search__bar {
+  display: flex;
+}
+
+.position__relative {
+  position: relative !important;
+}
+
+.header__right .search__bar .search .search__input {
+  display: flex;
+  padding: 10px 50px 10px 20px;
+  height: 45px;
+  color: rgba(22, 28, 45, 0.7);
+  border: none;
+  font-weight: 400;
+  border-radius: 6px;
+  position: relative;
+  right: 0;
+  background: white;
+  outline: 0;
+  border: 1px solid white;
+}
+
+.header__right .search__bar .search .search__icon {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.mobile__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  padding: 0;
+  margin: 0;
+}
+
+#switchButton .mode-container {
+  width: 24px;
+  height: 24px;
+  padding: 1px 0;
+}
+
+#switchButton .fa-sun {
+  display: none;
+  /* font-size: 300px; */
+}
+
+#switchButton .fa-moon {
+  display: block;
+  font-size: 20px;
+  transform: rotate(-28deg) scale(1);
+}
+
+.mode-container i {
+  color: white;
+}
+
+button#navbar__toggler {
+  outline: none;
+  border: none;
+  background: none;
+  text-align: center;
+  color: #fbfdfb;
+  font-size: 1.95em;
+  padding: 0 8px;
+}
+
+/* Overlay style */
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+}
+
+/* Overlay style */
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgb(6 3 0 / 0.77);
+}
+
+/* Overlay closing cross */
+.overlay .overlay-close {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  overflow: hidden;
+  border: none;
+  background: #ff6600;
+  color: white;
+  border-radius: 6px;
+}
+
+button#trigger-overlay {
+  outline: none;
+  border: none;
+  background: none;
+  text-align: center;
+  color: #fbfdfb;
+  font-size: 1.95em;
+  padding: 0 8px;
+}
+
+/* Menu style */
+.overlay nav {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  height: 60%;
+  /* -webkit-transform: translateY(-50%); */
+  transform: translateY(-50%);
+}
+.overlay ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  height: 100%;
+  position: relative;
+}
+.overlay ul li {
+  display: block;
+  /* -webkit-backface-visibility: hidden; */
+  backface-visibility: hidden;
+  line-height: 3em;
+}
+.overlay ul li a {
+  font-size: 20px;
+  font-weight: 600;
+  display: block;
+  color: white;
+  /* -webkit-transition: color 0.2s; */
+  transition: color 0.2s;
+}
+
+.overlay ul li a:hover,
+.overlay ul li a:focus {
+  color: #ff6600;
+}
+
+/* Effects */
+.overlay-scale {
+  visibility: hidden;
+  opacity: 0;
+  /* -webkit-transform: scale(0.9); */
+  transform: scale(0.9);
+  /* -webkit-transition: -webkit-transform 0.2s, opacity 0.2s, visibility 0s 0.2s; */
+  transition: transform 0.2s, opacity 0.2s, visibility 0s 0.2s;
+}
+
+.overlay-scale.open {
+  visibility: visible;
+  opacity: 1;
+  /* -webkit-transform: scale(1); */
+  transform: scale(1);
+  /* -webkit-transition: -webkit-transform 0.4s, opacity 0.4s; */
+  transition: transform 0.4s, opacity 0.4s;
+}
+
+@media screen and (max-height: 30.5em) {
+  .overlay nav {
+    height: 70%;
+    font-size: 34px;
+  }
+
+  .overlay ul li {
+    min-height: 34px;
+  }
+}
+@media (max-width: 767px) {
+  .overlay ul li a {
+    font-size: 16px;
+  }
+  .overlay ul li {
+    line-height: 2.5em;
+  }
+}
+@media (max-width: 600px) {
+  .overlay ul li a {
+    font-size: 16px;
+  }
+  .overlay ul li {
+    line-height: 2.2em;
+  }
 }
 
 /* END HEADER CSS */
@@ -150,12 +381,14 @@ h6 {
   background-attachment: fixed;
   min-height: 700px;
   overflow: hidden;
+
+  position: static;
 }
 
 .carousel .carousel__title {
   max-width: 600px;
   text-align: left;
-  margin-top: 100px;
+  margin-top: 210px;
 }
 
 .carousel .carousel__title h3 {
@@ -196,23 +429,81 @@ h6 {
   color: #ff6600;
 }
 
-@media (min-width: 992px) {
-  .pr-lg-5 {
-    padding-right: 3rem !important;
-  }
-}
-
-@media (min-width: 768px) {
-  .mt-md-4 {
-    margin-top: 1.5rem !important;
-  }
-}
-
 /* END CAROUSEL CSS */
+
+/* ABOUT CSS */
+.about {
+  background: white;
+}
+
+.about__title {
+  color: #ff6600;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  display: block;
+  font-family: "Pacifico", cursive;
+
+  /* letter-spacing: dùng để định dạng khoảng cách giữa các ký tự trong một đoạn văn bản. Thuộc tính này có thể áp dụng cho tất cả các phần tử của cả HTML */
+  letter-spacing: 1px;
+}
+
+.about__we {
+  font-size: 38px;
+  line-height: 48px;
+  font-weight: 600;
+}
+
+.about_right p {
+  font-size: 18px;
+  line-height: 28px;
+  color: rgba(22, 28, 45, 0.7);
+  font-family: "Quicksand", sans-serif;
+}
+
+@media (max-width: 600px) {
+  p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about__title {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about__we {
+    font-size: 26px !important;
+    line-height: 36px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about__we {
+    font-size: 30px !important;
+    line-height: 38px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .about__we {
+    font-size: 32px !important;
+    line-height: 40px;
+  }
+}
+
+/* END ABOUT CSS */
 
 /* RESTAURANTS CSS */
 .restaurants {
-  background-color: #ff6600;
+  background: #ff6600;
+}
+
+.restaurants p {
+  color: #ffdfc9;
 }
 
 .restaurants__image {
@@ -236,13 +527,18 @@ h6 {
   min-height: 100%;
 }
 
+.restaurants__than.restaurants__than1 {
+  color: white;
+}
+
 .restaurants__than {
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
+  color: #ff6600;
   display: block;
   font-family: "Pacifico", cursive;
-  color: white;
+  letter-spacing: 1px;
 }
 
 .restaurants__book {
@@ -251,7 +547,7 @@ h6 {
   font-weight: 600;
 }
 
-.restaurants__title p {
+p {
   color: #ffdfc9;
   font-size: 18px;
   line-height: 28px;
@@ -298,13 +594,107 @@ h6 {
   line-height: 1.2;
   font-weight: 700;
   margin-bottom: 15px;
+}
+
+.restaurants__subsribe__item .restaurants__subsribe__link:hover {
+  opacity: 0.9;
+}
+
+.restaurants__subsribe__item a {
+  color: #ff6600;
   text-decoration: none;
   background-color: transparent;
+}
+
+.restaurants__subsribe__item a:hover {
+  text-decoration: none;
+}
+
+p {
+  font-size: 18px;
+  line-height: 28px;
+  color: rgba(22, 28, 45, 0.7);
+  font-family: "Quicksand", sans-serif;
+}
+
+@media (max-width: 600px) {
+  p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+/* @media (max-width: 1200px) {
+
+  h3,
+  .h3 {
+    font-size: calc(1.3rem + 0.6vw);
+  }
+} */
+
+@media (max-width: 375px) {
+  .restaurants__than {
+    font-size: 16px !important;
+    letter-spacing: 0.5px;
+  }
+}
+
+@media (max-width: 600px) {
+  .restaurants__than {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 992px) {
+  .restaurants__subsribe__item .restaurants__subsribe__link {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 992px) {
   .restaurants__image {
     min-height: 200px;
+  }
+}
+
+@media (max-width: 375px) {
+  .restaurants__book,
+  .restaurants__book.restaurants__book1 {
+    font-size: 24px !important;
+    line-height: 34px;
+  }
+}
+
+@media (max-width: 480px) {
+  .restaurants__book,
+  .restaurants__book.restaurants__book1 {
+    font-size: 26px !important;
+    line-height: 36px;
+  }
+}
+
+@media (max-width: 600px) {
+  .restaurants__book,
+  .restaurants__book.restaurants__book1 {
+    font-size: 30px !important;
+    line-height: 38px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .restaurants__book,
+  .restaurants__book.restaurants__book1 {
+    font-size: 32px !important;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .restaurants__subsribe {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* margin-top: 30px; */
+    grid-gap: 20px 10px;
   }
 }
 
@@ -744,16 +1134,21 @@ h6 {
 /* TESTIMONIALS */
 .slick-dots li.slick-active button:before {
   color: #ff6600;
-  zoom: 1;
   cursor: pointer;
-  font-size: 10px;
+  font-size: 12px;
   opacity: 1;
+  margin-right: 5px;
 }
 .slick-dots li button::before {
-  font-size: 10px;
+  font-size: 12px;
+  color: #d8d8d8;
+  opacity: 1;
 }
 .slick-dots li button:hover::before {
   color: #ff6600;
+}
+.testimonials {
+  background-color: white;
 }
 .tes__infor {
   max-width: 700px;

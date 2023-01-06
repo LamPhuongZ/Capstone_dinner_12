@@ -56,7 +56,7 @@ html,
     color: #eee;
 }
 
-.dark p {
+.dark .about_right p {
     font-size: 18px;
     line-height: 28px;
     color: #c2d0da;

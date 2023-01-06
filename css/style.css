@@ -82,18 +82,26 @@ h6 {
 
 .before__title {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 30px;
+
+   /* letter-spacing: dùng để định dạng khoảng cách giữa các ký tự trong một đoạn văn bản. Thuộc tính này có thể áp dụng cho tất cả các phần tử của cả HTML */
   letter-spacing: 1px;
-  color: #ff6600 !important;
+  color: #ff6600;
   display: block;
   font-family: "Pacifico", cursive;
-  text-transform: capitalize;
 }
 
 @media (max-width: 600px) {
   .before__title {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 375px) {
+  .before__title {
+    font-size: 16px !important;
+    letter-spacing: .5px;
   }
 }
 
@@ -138,35 +146,10 @@ p {
   }
 }
 
-.firt__title {
-  color: #ff6600;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 30px;
-  display: block;
-  font-family: "Pacifico", cursive;
-
-  /* letter-spacing: dùng để định dạng khoảng cách giữa các ký tự trong một đoạn văn bản. Thuộc tính này có thể áp dụng cho tất cả các phần tử của cả HTML */
-  letter-spacing: 1px;
-}
-
 .general__title {
   font-size: 38px;
   line-height: 48px;
   font-weight: 600;
-}
-
-@media (max-width: 600px) {
-  .firt__title {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 375px) {
-  .firt__title {
-    font-size: 16px !important;
-    letter-spacing: .5px;
-  }
 }
 
 @media (max-width: 1080px) {
@@ -627,7 +610,7 @@ button#nav__toggler {
   min-height: 100%;
 }
 
-.firt__title.firt__title1 {
+.before__title.before__title1 {
   color: white;
 }
 

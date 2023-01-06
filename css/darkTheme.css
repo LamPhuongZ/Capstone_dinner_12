@@ -63,7 +63,26 @@ html,
     font-family: 'Quicksand', sans-serif;
 }
 
+.dark .restaurants p {
+  color: #ffdfc9;
+}
+
 /* END DARK ABOUT CSS */
+
+/* DARK RESTAURANTS CSS */
+.dark .before__title.before__title1 {
+  color: white;
+}
+
+.dark .restaurants__subsribe__item .restaurants__subsribe__link {
+  display: block;
+  color: #eee;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+/* END DARK RESTAURANTS CSS */
 
 /* DARK CATEGORIES */
 .dark .categories {

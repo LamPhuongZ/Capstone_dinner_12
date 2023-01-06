@@ -3,7 +3,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Ubuntu", "Cantarell", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Ubuntu",
+    "Cantarell", sans-serif;
 }
 
 html,
@@ -53,18 +54,21 @@ h6 {
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
+    margin: 0 auto;
   }
 }
 
@@ -85,7 +89,7 @@ h6 {
   font-weight: 400;
   line-height: 30px;
 
-   /* letter-spacing: dùng để định dạng khoảng cách giữa các ký tự trong một đoạn văn bản. Thuộc tính này có thể áp dụng cho tất cả các phần tử của cả HTML */
+  /* letter-spacing: dùng để định dạng khoảng cách giữa các ký tự trong một đoạn văn bản. Thuộc tính này có thể áp dụng cho tất cả các phần tử của cả HTML */
   letter-spacing: 1px;
   color: #ff6600;
   display: block;
@@ -101,7 +105,7 @@ h6 {
 @media (max-width: 375px) {
   .before__title {
     font-size: 16px !important;
-    letter-spacing: .5px;
+    letter-spacing: 0.5px;
   }
 }
 
@@ -380,7 +384,7 @@ button#nav__toggler {
   }
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .overlay ul li a {
     font-size: 16px;
   }
@@ -390,7 +394,7 @@ button#nav__toggler {
   }
 }
 
-@media (max-width:600px) {
+@media (max-width: 600px) {
   .overlay ul li a {
     font-size: 16px;
   }
@@ -510,7 +514,7 @@ button#nav__toggler {
 
 @media (max-width: 479px) {
   .carousel {
-    min-height: 465px
+    min-height: 465px;
   }
 }
 
@@ -812,7 +816,12 @@ button#nav__toggler {
 
 /* DELICIOUSNESS */
 .deliciousness__mouth {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/banner2.jpg);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(../img/banner2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 470px;
@@ -919,8 +928,6 @@ button#nav__toggler {
   padding-bottom: 100px;
 }
 
-
-
 .deliciousness__video .video__iframe {
   position: relative;
 }
@@ -972,7 +979,6 @@ button#nav__toggler {
   top: -10px;
   animation: arounding 2s infinite;
 }
-
 
 .deliciousness__video .video__iframe span:hover {
   transform: scale(1.2);
@@ -1034,6 +1040,9 @@ button#nav__toggler {
 }
 
 /* POST */
+.posts {
+  background-color: #f7f7f7;
+}
 
 .posts__card {
   position: relative;
@@ -1117,7 +1126,7 @@ button#nav__toggler {
   margin-right: 5px;
 }
 
-.posts__readMore span {
+.posts__readMore {
   color: #232121;
   opacity: 0.9;
 }
@@ -1185,7 +1194,7 @@ button#nav__toggler {
 
 @media (max-width: 475px) {
   .tes__comment blockquote {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 30px;
   }
 }

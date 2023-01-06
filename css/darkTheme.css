@@ -1,179 +1,202 @@
 /* GLOBAL */
 html,
 .dark body {
-  background: #232220;
-  color: #c2d0da;
-  font-family: "Quicksand", sans-serif;
+    background: #232220;
+    color: #c2d0da;
+    font-family: "Quicksand", sans-serif;
 }
 
 /* END GLOBAL */
 
 /* DARK HEADER CSS */
 .dark #switchButton .fa-sun {
-  display: block;
-  font-size: 20px;
-  color: white;
+    display: block;
+    font-size: 20px;
+    color: white;
 }
 
 .dark #switchButton .fa-moon {
-  display: none;
+    display: none;
 }
 
 .dark .header__right .search__bar .search .search__input {
-  display: flex;
-  padding: 10px 50px 10px 20px;
-  height: 45px;
-  color: #c2d0da;
-  font-weight: 400;
-  border-radius: 6px;
-  position: relative;
-  right: 0;
-  background: #282828;
-  outline: 0;
-  border: 1px solid #282828;
+    display: flex;
+    padding: 10px 50px 10px 20px;
+    height: 45px;
+    color: #c2d0da;
+    font-weight: 400;
+    border-radius: 6px;
+    position: relative;
+    right: 0;
+    background: #282828;
+    outline: 0;
+    border: 1px solid #282828;
 }
 
 .dark .header__right .search__bar .search .search__icon {
-  position: absolute;
-  top: 15px;
-  right: 20px;
-  font-size: 15px;
-  cursor: pointer;
-  color: #c2d0da;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    color: #c2d0da;
 }
 
 /* END DARK HEADER CSS */
 
 /* DARK ABOUT CSS */
 .dark .about {
-  background: #282828;
+    background: #282828;
 }
 
 .dark .general__title {
-  font-size: 38px;
-  line-height: 48px;
-  font-weight: 600;
-  color: #eee;
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 600;
+    color: #eee;
 }
 
 .dark .about_right p {
-  font-size: 18px;
-  line-height: 28px;
-  color: #c2d0da;
-  font-family: "Quicksand", sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    color: #c2d0da;
+    font-family: "Quicksand", sans-serif;
 }
 
 .dark .restaurants p {
-  color: #ffdfc9;
+    color: #ffdfc9;
 }
+
 /* END DARK ABOUT CSS */
 
 /* DARK RESTAURANTS CSS */
 .dark .before__title.before__title1 {
-  color: white;
+    color: white;
 }
 
 .dark .restaurants__subsribe__item .restaurants__subsribe__link {
-  display: block;
-  color: #eee;
-  font-size: 20px;
-  line-height: 1.2;
-  font-weight: 700;
-  margin-bottom: 15px;
+    display: block;
+    color: #eee;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 15px;
 }
+
 /* END DARK RESTAURANTS CSS */
 
 /* DARK CATEGORIES */
 .dark .categories {
-  background-color: #282828 !important;
+    background-color: #282828 !important;
 }
 
 .dark .title {
-  color: white;
+    color: #eee;
+
 }
 
 /* DARK FEATURES */
 .dark .features {
-  background-color: #232220;
+    background-color: #232220;
 }
 
 .dark .details__nameFood a {
-  color: white;
+    color: white;
 }
 
 .dark .details__nameFood p,
 .dark .details__bottom p {
-  color: #c2d0da;
+    color: #c2d0da;
 }
 
 /* DARK DELICIOUSNESS */
 .dark .deliciousness,
 .dark .counting__wrapper {
-  background-color: #232220;
+    background-color: #232220;
 }
 
 .dark .deliciousness__counting .counting__wrapper:hover {
-  box-shadow: rgba(255, 255, 255, 0.5) 0px 0px 10px 0px;
+    box-shadow: rgba(255, 255, 255, 0.5) 0px 0px 3px 0px;
 }
 
 .dark .counting__wrapper h1 {
-  color: white;
+    color: white;
 }
 
 .dark .counting__wrapper p {
-  color: #c2d0da;
+    color: #c2d0da;
 }
+
 /* DARK POSTS */
 .dark .posts {
-  background-color: #282828 !important;
+    background-color: #282828 !important;
 }
+
 .dark .posts__dis {
-  color: white;
+    color: white;
 }
+
 .dark .posts__infor {
-  color: #c2d0da;
+    color: #c2d0da;
 }
+
 .dark .posts__name {
-  color: #eee;
+    color: #eee;
 }
+
+.dark .posts__readMore span {
+    color: #eee;
+}
+
 .dark .posts__readMore {
-  color: #eee;
+    color: #eee;
 }
+
 .dark .testimonials {
-  background-color: #232220;
+    background-color: #232220;
 }
+
 .dark blockquote {
-  color: #eee;
+    color: #eee;
 }
+
 .dark .tes__comment p {
-  color: #c2d0da;
+    color: #c2d0da;
 }
+
 .dark .tes__name h3 {
-  color: #eee;
+    color: #eee;
 }
+
 .dark .tes__name p {
-  color: #c2d0da;
+    color: #c2d0da;
 }
+
 .dark .slick-dots li.slick-active button:before {
-  color: #ff6600;
-  cursor: pointer;
-  font-size: 12px;
-  opacity: 1;
+    color: #ff6600;
+    cursor: pointer;
+    font-size: 12px;
+    opacity: 1;
 }
+
 .dark .slick-dots li button::before {
-  font-size: 12px;
+    font-size: 12px;
 }
+
 .dark .slick-dots li button:hover::before {
-  color: #ff6600;
+    color: #ff6600;
 }
+
 .dark .footer__social i {
-  color: #ff6600;
-  background-color: #232220;
+    color: #ff6600;
+    background-color: #232220;
 }
+
 .dark .footer__social i:hover {
-  color: white;
-  background-color: #ff6600;
+    color: white;
+    background-color: #ff6600;
 }
+
 .dark .footer__sub input {
-  background-color: #232220;
+    background-color: #232220;
 }

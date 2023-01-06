@@ -12,6 +12,7 @@ body {
   background: white;
   color: rgba(22, 28, 45, 0.7);
   font-family: "Quicksand", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -572,6 +573,7 @@ button#nav__toggler {
 }
 
 @media (max-width: 480px) {
+
   .btn__white,
   .btn__style {
     padding: 10px 21px;
@@ -694,11 +696,20 @@ button#nav__toggler {
     grid-gap: 20px 10px;
   }
 }
+
 /* END RESTAURANTS CSS */
 
 /* CATEGORIES */
 .categories {
   padding-bottom: 90px;
+}
+
+.categories__content .categories__title h3 {
+  padding-bottom: 50px;
+}
+
+.categories__content .categories__title h6 {
+  padding-top: 50px;
 }
 
 .categories .gap_row {
@@ -738,6 +749,39 @@ button#nav__toggler {
   color: #ffc600;
   font-size: 18px;
   font-weight: 600;
+}
+
+@media screen and (max-width: 992px) {
+  .categories__content .categories__title h3 {
+    padding-bottom: 20px !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .col__wrapper .col__nameFood h4 {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .col__wrapper .col__nameFood span {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .categories__content .categories__title h6 {
+    padding-top: 0px !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .categories__content .categories__title h6 {
+    font-size: 16px;
+  }
+
+  .categories__content .categories__title h3 {
+    font-size: 30px;
+  }
 }
 
 /* FEATURES */
@@ -812,6 +856,20 @@ button#nav__toggler {
   margin-top: 25px;
   margin-bottom: 0;
   color: rgba(22, 28, 45, 0.6);
+}
+
+@media screen and (max-width: 600px) {
+  .col__details .details__nameFood p {
+    font-size: 16px;
+  }
+
+  .col__details .details__nameFood a {
+    font-size: 22px;
+  }
+
+  .col__details .details__bottom p {
+    font-size: 16px;
+  }
 }
 
 /* DELICIOUSNESS */
@@ -1009,16 +1067,58 @@ button#nav__toggler {
   width: 40%;
 }
 
-@media screen and (max-width: 576px) {
-  .mouth__content h1 {
-    width: 100% !important;
-    font-size: 35px;
+@media screen and (max-width: 1200px) {
+  .deliciousness__mouth .mouth__content h1 {
+    width: 55% !important;
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 992px) {
   .deliciousness__counting {
     position: unset;
+    padding-bottom: 80px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .deliciousness__mouth {
+    height: 350px;
+  }
+
+  .deliciousness__counting {
+    padding-top: 50px;
+  }
+
+  .deliciousness__mouth .mouth__content {
+    padding-top: 70px;
+  }
+
+  .deliciousness__mouth .mouth__content h1 {
+    width: 95% !important;
+    font-size: 40px;
+  }
+
+  .deliciousness__video {
+    padding-bottom: 70px;
+  }
+
+  .deliciousness__video .video__iframe img {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .deliciousness__mouth .mouth__content h1 {
+    font-size: 35px;
+    width: 100% !important;
+  }
+
+  .deliciousness__counting .counter {
+    font-size: 32px;
+  }
+
+  .deliciousness__video .video__iframe img {
+    height: 350px;
   }
 }
 

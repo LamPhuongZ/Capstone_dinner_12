@@ -474,6 +474,7 @@ button#nav__toggler {
   font-size: 16px;
   line-height: 28px;
   color: white;
+  margin-bottom: 0;
 }
 
 .btn__white {
@@ -484,7 +485,7 @@ button#nav__toggler {
   font-size: 16px;
   line-height: 30px;
   font-weight: 700;
-  transition: all 0.3s;
+  transition: 0.3s ease-in;
   border-radius: 6px;
 }
 
@@ -597,7 +598,7 @@ button#nav__toggler {
   background-position: center;
   background-size: cover;
   position: relative;
-  min-height: 600px;
+  min-height: 615px;
 }
 
 .restaurants .restaurants__image::before {
@@ -616,7 +617,7 @@ button#nav__toggler {
 
 .restaurants__subsribe {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 30px;
 }
 
@@ -685,7 +686,7 @@ button#nav__toggler {
 @media (max-width: 992px) {
   .restaurants__subsribe {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px 10px;
   }
 }

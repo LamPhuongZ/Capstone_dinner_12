@@ -1,66 +1,66 @@
 /* GLOBAL */
 html,
 .dark body {
-    background: #232220;
-    color: #c2d0da;
-    font-family: "Quicksand", sans-serif;
+  background: #232220;
+  color: #c2d0da;
+  font-family: "Quicksand", sans-serif;
 }
 
 /* END GLOBAL */
 
 /* DARK HEADER CSS */
 .dark #switchButton .fa-sun {
-    display: block;
-    font-size: 20px;
-    color: white;
+  display: block;
+  font-size: 20px;
+  color: white;
 }
 
 .dark #switchButton .fa-moon {
-    display: none;
+  display: none;
 }
 
 .dark .header__right .search__bar .search .search__input {
-    display: flex;
-    padding: 10px 50px 10px 20px;
-    height: 45px;
-    color: #c2d0da;
-    font-weight: 400;
-    border-radius: 6px;
-    position: relative;
-    right: 0;
-    background: #282828;
-    outline: 0;
-    border: 1px solid #282828;
+  display: flex;
+  padding: 10px 50px 10px 20px;
+  height: 45px;
+  color: #c2d0da;
+  font-weight: 400;
+  border-radius: 6px;
+  position: relative;
+  right: 0;
+  background: #282828;
+  outline: 0;
+  border: 1px solid #282828;
 }
 
 .dark .header__right .search__bar .search .search__icon {
-    position: absolute;
-    top: 15px;
-    right: 20px;
-    font-size: 15px;
-    cursor: pointer;
-    color: #c2d0da;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 15px;
+  cursor: pointer;
+  color: #c2d0da;
 }
 
 /* END DARK HEADER CSS */
 
 /* DARK ABOUT CSS */
 .dark .about {
-    background: #282828;
+  background: #282828;
 }
 
 .dark .general__title {
-    font-size: 38px;
-    line-height: 48px;
-    font-weight: 600;
-    color: #eee;
+  font-size: 38px;
+  line-height: 48px;
+  font-weight: 600;
+  color: #eee;
 }
 
 .dark .about_right p {
-    font-size: 18px;
-    line-height: 28px;
-    color: #c2d0da;
-    font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  color: #c2d0da;
+  font-family: "Quicksand", sans-serif;
 }
 
 .dark .restaurants p {
@@ -136,7 +136,7 @@ html,
 .dark .posts__name {
   color: #eee;
 }
-.dark .posts__readMore span {
+.dark .posts__readMore {
   color: #eee;
 }
 .dark .testimonials {

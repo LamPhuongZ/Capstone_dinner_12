@@ -56,11 +56,11 @@ html,
     color: #eee;
 }
 
-.dark p {
+.dark .about_right p {
     font-size: 18px;
     line-height: 28px;
     color: #c2d0da;
-    font-family: 'Quicksand', sans-serif;
+    font-family: "Quicksand", sans-serif;
 }
 
 .dark .restaurants p {
@@ -145,6 +145,10 @@ html,
 }
 
 .dark .posts__readMore span {
+    color: #eee;
+}
+
+.dark .posts__readMore {
     color: #eee;
 }
 

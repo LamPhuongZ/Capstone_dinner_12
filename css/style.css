@@ -3,7 +3,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Ubuntu", "Cantarell", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Ubuntu",
+    "Cantarell", sans-serif;
 }
 
 html,
@@ -54,18 +55,21 @@ h6 {
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
+    margin: 0 auto;
   }
 }
 
@@ -102,7 +106,7 @@ h6 {
 @media (max-width: 375px) {
   .before__title {
     font-size: 16px !important;
-    letter-spacing: .5px;
+    letter-spacing: 0.5px;
   }
 }
 
@@ -381,7 +385,7 @@ button#nav__toggler {
   }
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .overlay ul li a {
     font-size: 16px;
   }
@@ -391,7 +395,7 @@ button#nav__toggler {
   }
 }
 
-@media (max-width:600px) {
+@media (max-width: 600px) {
   .overlay ul li a {
     font-size: 16px;
   }
@@ -475,6 +479,7 @@ button#nav__toggler {
   font-size: 16px;
   line-height: 28px;
   color: white;
+  margin-bottom: 0;
 }
 
 .btn__white {
@@ -485,7 +490,7 @@ button#nav__toggler {
   font-size: 16px;
   line-height: 30px;
   font-weight: 700;
-  transition: all 0.3s;
+  transition: 0.3s ease-in;
   border-radius: 6px;
 }
 
@@ -510,7 +515,7 @@ button#nav__toggler {
 
 @media (max-width: 479px) {
   .carousel {
-    min-height: 465px
+    min-height: 465px;
   }
 }
 
@@ -599,7 +604,7 @@ button#nav__toggler {
   background-position: center;
   background-size: cover;
   position: relative;
-  min-height: 600px;
+  min-height: 615px;
 }
 
 .restaurants .restaurants__image::before {
@@ -618,7 +623,7 @@ button#nav__toggler {
 
 .restaurants__subsribe {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 30px;
 }
 
@@ -687,7 +692,7 @@ button#nav__toggler {
 @media (max-width: 992px) {
   .restaurants__subsribe {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px 10px;
   }
 }
@@ -869,7 +874,12 @@ button#nav__toggler {
 
 /* DELICIOUSNESS */
 .deliciousness__mouth {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/banner2.jpg);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(../img/banner2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 470px;
@@ -1028,7 +1038,6 @@ button#nav__toggler {
   animation: arounding 2s infinite;
 }
 
-
 .deliciousness__video .video__iframe span:hover {
   transform: scale(1.2);
 }
@@ -1131,6 +1140,9 @@ button#nav__toggler {
 }
 
 /* POST */
+.posts {
+  background-color: #f7f7f7;
+}
 
 .posts__card {
   position: relative;
@@ -1214,7 +1226,7 @@ button#nav__toggler {
   margin-right: 5px;
 }
 
-.posts__readMore span {
+.posts__readMore {
   color: #232121;
   opacity: 0.9;
 }
@@ -1282,7 +1294,7 @@ button#nav__toggler {
 
 @media (max-width: 475px) {
   .tes__comment blockquote {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 30px;
   }
 }

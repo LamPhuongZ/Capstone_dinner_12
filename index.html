@@ -775,9 +775,10 @@
   <script src="https://cdn.jsdelivr.net/gh/englishextra/iframe-lightbox@latest/js/iframe-lightbox.min.js"></script>
 
   <script>
-      .forEach.call(document.getElementsByClassName("iframe-lightbox-link"), function (el) {
-        el.lightbox = new IframeLightbox(el);
-      });
+    // <!-- Vy Vy có thấy báo lỗi đỏ nhưng nếu bỏ [] thì video sẽ ko chạy giống web mẫu được. Nên Vy đành để giống thư viện như vậy luôn, và vì nó cũng ko ảnh hưởng đến web ạaa -->
+    [].forEach.call(document.getElementsByClassName("iframe-lightbox-link"), function (el) {
+      el.lightbox = new IframeLightbox(el);
+    });
   </script>
 
   <!-- MENU JS -->
